@@ -1,0 +1,22 @@
+{
+  "linhas_brutas": 1067371,
+  "linhas_repetidas_entre_abas": 22523,
+  "linhas_sem_cliente": 235287,
+  "linhas_de_cancelamento": 18446,
+  "valor_dos_cancelamentos": 1087882.14,
+  "valor_dos_cancelamentos_de_itens_nao_produto": 374872.49,
+  "linhas_de_outras_faturas_nao_venda": 0,
+  "linhas_com_quantidade_ou_preco_nao_positivo": 70,
+  "linhas_de_itens_nao_produto": 2858,
+  "valor_dos_itens_nao_produto": 306624.95,
+  "linhas_de_compra_validas": 788187,
+  "receita_bruta": 17124926.23,
+  "linhas_de_compra_canceladas_depois": 6098,
+  "valor_das_compras_canceladas_depois": 590110.37,
+  "clientes": 5852,
+  "dias_de_compra": 32878,
+  "primeiro_dia": "2009-12-01",
+  "ultimo_dia": "2011-12-09",
+  "fonte": "https://archive.ics.uci.edu/static/public/502/online+retail+ii.zip",
+  "sha256_do_zip": "572e36277c2390fbfde10664750731e0a86f55e33470d91919085f0408e67bfb"
+}

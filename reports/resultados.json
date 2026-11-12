@@ -1,0 +1,4500 @@
+{
+  "limpeza": {
+    "linhas_brutas": 1067371,
+    "linhas_repetidas_entre_abas": 22523,
+    "linhas_sem_cliente": 235287,
+    "linhas_de_cancelamento": 18446,
+    "valor_dos_cancelamentos": 1087882.14,
+    "valor_dos_cancelamentos_de_itens_nao_produto": 374872.49,
+    "linhas_de_outras_faturas_nao_venda": 0,
+    "linhas_com_quantidade_ou_preco_nao_positivo": 70,
+    "linhas_de_itens_nao_produto": 2858,
+    "valor_dos_itens_nao_produto": 306624.95,
+    "linhas_de_compra_validas": 788187,
+    "receita_bruta": 17124926.23,
+    "linhas_de_compra_canceladas_depois": 6098,
+    "valor_das_compras_canceladas_depois": 590110.37,
+    "clientes": 5852,
+    "dias_de_compra": 32878,
+    "primeiro_dia": "2009-12-01",
+    "ultimo_dia": "2011-12-09",
+    "fonte": "https://archive.ics.uci.edu/static/public/502/online+retail+ii.zip",
+    "sha256_do_zip": "572e36277c2390fbfde10664750731e0a86f55e33470d91919085f0408e67bfb"
+  },
+  "base": {
+    "corte": "2010-11-30",
+    "fim_da_validacao": "2011-11-30",
+    "semanas_de_validacao": 52.1,
+    "clientes": 4229,
+    "parcela_sem_recompra_na_calibracao": 0.35232915582880114,
+    "recompras_medias_na_calibracao": 2.8127216836131472,
+    "semanas_medias_de_historico": 31.101577542816603,
+    "ticket_medio_por_compra": 408.6715366854948,
+    "ticket_mediano_por_compra": 302.04,
+    "receita_na_calibracao": 8212654.2,
+    "compras_medias_na_validacao": 2.892409553085836,
+    "parcela_sem_compra_na_validacao": 0.3620241191771104,
+    "receita_na_validacao": 6606279.26,
+    "parcela_da_receita_futura_nos_10_maiores": 0.6875299818918039
+  },
+  "parametros": {
+    "bgnbd": {
+      "r": 0.9098441310074026,
+      "alfa": 10.771224330973968,
+      "a": 0.15684811058771803,
+      "b": 103.83840024902504,
+      "log_verossimilhanca": -36336.38072131602,
+      "convergiu": true
+    },
+    "gamma_gamma": {
+      "p": 2.509021528712951,
+      "q": 3.574690332381348,
+      "gama": 415.9698342448434,
+      "log_verossimilhanca": -28761.866609257093,
+      "convergiu": true
+    },
+    "compras_por_semana_de_um_cliente_medio": 0.08446988968478122,
+    "abandono_medio_por_recompra": 0.001508223818508914,
+    "probabilidade_vivo": {
+      "media": 0.9959753992842567,
+      "minimo": 0.0917734055217611,
+      "percentil_1": 0.9631602293259397,
+      "parcela_abaixo_de_90": 0.0035469378103570584
+    },
+    "ticket_medio_da_base_pelo_modelo": 405.360309272675,
+    "peso_da_base_com_1_compra": 0.5064587456432141,
+    "peso_da_base_com_5_compras": 0.1702860273978125,
+    "intervalos_de_95_por_bootstrap": {
+      "r": {
+        "inferior": 0.8319495470348599,
+        "superior": 0.992299210543818
+      },
+      "alfa": {
+        "inferior": 9.402190994099223,
+        "superior": 11.971949061757067
+      },
+      "a": {
+        "inferior": 0.034695258102302104,
+        "superior": 0.3947457997926535
+      },
+      "b": {
+        "inferior": 34.57950551225068,
+        "superior": 628.5095594479046
+      },
+      "p": {
+        "inferior": 2.2220541557529176,
+        "superior": 2.9146959966168193
+      },
+      "q": {
+        "inferior": 3.2651856228391862,
+        "superior": 3.87668478073014
+      },
+      "gama": {
+        "inferior": 336.84451452067583,
+        "superior": 501.3524988156027
+      }
+    },
+    "reajustes": 200
+  },
+  "erro_nas_compras": {
+    "tabela": {
+      "BG/NBD": {
+        "erro_absoluto_medio": 2.4987944789,
+        "eam_inferior": 2.4193370389,
+        "eam_superior": 2.5773450862,
+        "raiz_do_erro_quadratico": 3.5819758837,
+        "req_inferior": 3.3405048054,
+        "req_superior": 3.8320475438,
+        "vies_do_total": 0.4961877285,
+        "vies_inferior": 0.4383259435,
+        "vies_superior": 0.5557249931,
+        "total_previsto": 18301.3682951744
+      },
+      "Taxa histórica do cliente": {
+        "erro_absoluto_medio": 2.5891382766,
+        "eam_inferior": 2.467436255,
+        "eam_superior": 2.7188445986,
+        "raiz_do_erro_quadratico": 4.9501890592,
+        "req_inferior": 4.4210714636,
+        "req_superior": 5.5449956863,
+        "vies_do_total": 0.4423674569,
+        "vies_inferior": 0.3845019508,
+        "vies_superior": 0.5032018729,
+        "total_previsto": 17643.0387331695
+      },
+      "Média da base": {
+        "erro_absoluto_medio": 4.0010715743,
+        "eam_inferior": 3.8609225276,
+        "eam_superior": 4.1497018417,
+        "raiz_do_erro_quadratico": 6.1263536325,
+        "req_inferior": 5.2408960973,
+        "req_superior": 7.055109945,
+        "vies_do_total": 0.6303444914,
+        "vies_inferior": 0.529085692,
+        "vies_superior": 0.7380641175,
+        "total_previsto": 19942.3738188335
+      }
+    },
+    "total_real": 12232.0,
+    "eam_modelo_menos_taxa": -0.09034379776582346,
+    "eam_modelo_menos_taxa_ic": [
+      -0.18599513837478704,
+      -0.002991896298232333
+    ],
+    "req_modelo_menos_taxa": -1.3682131754786258,
+    "req_modelo_menos_taxa_ic": [
+      -1.944761457970028,
+      -0.8735154690152519
+    ]
+  },
+  "calibracao_por_frequencia": {
+    "0": {
+      "clientes": 1490,
+      "real": 0.8382550336,
+      "modelo": 2.0369698094,
+      "taxa_historica": 0.0,
+      "media_da_base": 4.7156239818,
+      "modelo_sobre_real": 2.4300120224
+    },
+    "1": {
+      "clientes": 846,
+      "real": 1.5236406619,
+      "modelo": 2.9818242466,
+      "taxa_historica": 3.1793665993,
+      "media_da_base": 4.7156239818,
+      "modelo_sobre_real": 1.9570390323
+    },
+    "2": {
+      "clientes": 525,
+      "real": 2.1447619048,
+      "modelo": 3.7642053371,
+      "taxa_historica": 4.6090269859,
+      "media_da_base": 4.7156239818,
+      "modelo_sobre_real": 1.7550690959
+    },
+    "3 a 4": {
+      "clientes": 585,
+      "real": 3.2478632479,
+      "modelo": 4.7614678921,
+      "taxa_historica": 5.312780011,
+      "media_da_base": 4.7156239818,
+      "modelo_sobre_real": 1.4660309036
+    },
+    "5 a 7": {
+      "clientes": 409,
+      "real": 4.8215158924,
+      "modelo": 6.7179417162,
+      "taxa_historica": 7.781720065,
+      "media_da_base": 4.7156239818,
+      "modelo_sobre_real": 1.3933256399
+    },
+    "8 a 15": {
+      "clientes": 279,
+      "real": 8.6200716846,
+      "modelo": 10.2283781992,
+      "taxa_historica": 12.0089671537,
+      "media_da_base": 4.7156239818,
+      "modelo_sobre_real": 1.1865769304
+    },
+    "16 ou mais": {
+      "clientes": 95,
+      "real": 24.1157894737,
+      "modelo": 25.0593449291,
+      "taxa_historica": 30.4458291968,
+      "media_da_base": 4.7156239818,
+      "modelo_sobre_real": 1.0391260446
+    }
+  },
+  "acompanhamento_mensal": {
+    "2010-12": {
+      "real": 1120,
+      "modelo": 1563.9627503875,
+      "taxa_historica": 1498.4498650089,
+      "modelo_sobre_real": 1.3963953128
+    },
+    "2011-01": {
+      "real": 848,
+      "modelo": 1562.0970100228,
+      "taxa_historica": 1498.4498650089,
+      "modelo_sobre_real": 1.8420955307
+    },
+    "2011-02": {
+      "real": 778,
+      "modelo": 1409.3459190316,
+      "taxa_historica": 1353.43858775,
+      "modelo_sobre_real": 1.8114986106
+    },
+    "2011-03": {
+      "real": 967,
+      "modelo": 1558.6222369956,
+      "taxa_historica": 1498.4498650089,
+      "modelo_sobre_real": 1.6118120341
+    },
+    "2011-04": {
+      "real": 840,
+      "modelo": 1506.6416580009,
+      "taxa_historica": 1450.1127725893,
+      "modelo_sobre_real": 1.7936210214
+    },
+    "2011-05": {
+      "real": 1066,
+      "modelo": 1555.1280761964,
+      "taxa_historica": 1498.4498650089,
+      "modelo_sobre_real": 1.4588443492
+    },
+    "2011-06": {
+      "real": 963,
+      "modelo": 1503.3060020497,
+      "taxa_historica": 1450.1127725893,
+      "modelo_sobre_real": 1.5610654227
+    },
+    "2011-07": {
+      "real": 896,
+      "modelo": 1551.7268643527,
+      "taxa_historica": 1498.4498650089,
+      "modelo_sobre_real": 1.7318380183
+    },
+    "2011-08": {
+      "real": 894,
+      "modelo": 1550.0319563601,
+      "taxa_historica": 1498.4498650089,
+      "modelo_sobre_real": 1.733816506
+    },
+    "2011-09": {
+      "real": 1113,
+      "modelo": 1498.4375184028,
+      "taxa_historica": 1450.1127725893,
+      "modelo_sobre_real": 1.346305048
+    },
+    "2011-10": {
+      "real": 1133,
+      "modelo": 1546.7592847206,
+      "taxa_historica": 1498.4498650089,
+      "modelo_sobre_real": 1.3651891304
+    },
+    "2011-11": {
+      "real": 1614,
+      "modelo": 1495.3090186537,
+      "taxa_historica": 1450.1127725893,
+      "modelo_sobre_real": 0.9264615977
+    }
+  },
+  "captura_de_receita": {
+    "BG/NBD + Gamma-Gamma": {
+      "top10": 0.6124280462,
+      "top10_inferior": 0.549953624,
+      "top10_superior": 0.6643662836,
+      "top10_menos_modelo": 0.0,
+      "top10_menos_modelo_inferior": 0.0,
+      "top10_menos_modelo_superior": 0.0,
+      "top20": 0.7410236772,
+      "top20_inferior": 0.6980264837,
+      "top20_superior": 0.7771716511,
+      "top20_menos_modelo": 0.0,
+      "top20_menos_modelo_inferior": 0.0,
+      "top20_menos_modelo_superior": 0.0,
+      "correlacao_de_postos": 0.602871586
+    },
+    "Taxa histórica x ticket do cliente": {
+      "top10": 0.5995409464,
+      "top10_inferior": 0.5361731409,
+      "top10_superior": 0.6529727298,
+      "top10_menos_modelo": -0.0128870998,
+      "top10_menos_modelo_inferior": -0.0219845927,
+      "top10_menos_modelo_superior": -0.0057010791,
+      "top20": 0.7384898848,
+      "top20_inferior": 0.6934491799,
+      "top20_superior": 0.7744646386,
+      "top20_menos_modelo": -0.0025337924,
+      "top20_menos_modelo_inferior": -0.0090742845,
+      "top20_menos_modelo_superior": 0.0020382068,
+      "correlacao_de_postos": 0.6009336007
+    },
+    "Gasto histórico total": {
+      "top10": 0.6075475532,
+      "top10_inferior": 0.5441620202,
+      "top10_superior": 0.6592676722,
+      "top10_menos_modelo": -0.004880493,
+      "top10_menos_modelo_inferior": -0.0167304246,
+      "top10_menos_modelo_superior": 0.0044466352,
+      "top20": 0.7378611603,
+      "top20_inferior": 0.6948219895,
+      "top20_superior": 0.7751110887,
+      "top20_menos_modelo": -0.0031625169,
+      "top20_menos_modelo_inferior": -0.013996703,
+      "top20_menos_modelo_superior": 0.0073554786,
+      "correlacao_de_postos": 0.6203690566
+    },
+    "RFM (M = gasto total)": {
+      "top10": 0.4771065488,
+      "top10_inferior": 0.4158615665,
+      "top10_superior": 0.534507706,
+      "top10_menos_modelo": -0.1353214974,
+      "top10_menos_modelo_inferior": -0.2035054091,
+      "top10_menos_modelo_superior": -0.0790439594,
+      "top20": 0.6712739302,
+      "top20_inferior": 0.6078670151,
+      "top20_superior": 0.7236903977,
+      "top20_menos_modelo": -0.069749747,
+      "top20_menos_modelo_inferior": -0.1360760087,
+      "top20_menos_modelo_superior": -0.0289007191,
+      "correlacao_de_postos": 0.6197763585
+    },
+    "RFM (M = ticket médio)": {
+      "top10": 0.5290711863,
+      "top10_inferior": 0.4571289781,
+      "top10_superior": 0.5920639829,
+      "top10_menos_modelo": -0.08335686,
+      "top10_menos_modelo_inferior": -0.1500020472,
+      "top10_menos_modelo_superior": -0.0420636571,
+      "top20": 0.6908395196,
+      "top20_inferior": 0.6457430939,
+      "top20_superior": 0.7326172107,
+      "top20_menos_modelo": -0.0501841576,
+      "top20_menos_modelo_inferior": -0.0761705262,
+      "top20_menos_modelo_superior": -0.0302716654,
+      "correlacao_de_postos": 0.6213533695
+    },
+    "Média da base (não ordena)": {
+      "top10": 0.1000236463,
+      "top10_inferior": 0.1000236463,
+      "top10_superior": 0.1000236463,
+      "top10_menos_modelo": -0.5124044,
+      "top10_menos_modelo_inferior": -0.5643426374,
+      "top10_menos_modelo_superior": -0.4499299777,
+      "top20": 0.2000472925,
+      "top20_inferior": 0.2000472925,
+      "top20_superior": 0.2000472925,
+      "top20_menos_modelo": -0.5409763847,
+      "top20_menos_modelo_inferior": -0.5771243586,
+      "top20_menos_modelo_superior": -0.4979791911,
+      "correlacao_de_postos": 0.0
+    },
+    "Ordem perfeita (teto)": {
+      "top10": 0.6875299819,
+      "top10_inferior": 0.6381434576,
+      "top10_superior": 0.7288069626,
+      "top10_menos_modelo": 0.0751019357,
+      "top10_menos_modelo_inferior": 0.0597164703,
+      "top10_menos_modelo_superior": 0.0926509326,
+      "top20": 0.8318212331,
+      "top20_inferior": 0.8037206755,
+      "top20_superior": 0.8553938518,
+      "top20_menos_modelo": 0.0907975558,
+      "top20_menos_modelo_inferior": 0.0753289605,
+      "top20_menos_modelo_superior": 0.1092111855,
+      "correlacao_de_postos": 1.0
+    }
+  },
+  "curvas_de_captura": [
+    {
+      "fracao_dos_clientes": 0.0,
+      "BG/NBD + Gamma-Gamma": 0.0,
+      "Taxa histórica x ticket do cliente": 0.0,
+      "Gasto histórico total": 0.0,
+      "RFM (M = gasto total)": 0.0,
+      "RFM (M = ticket médio)": 0.0,
+      "Média da base (não ordena)": 0.0,
+      "Ordem perfeita (teto)": 0.0
+    },
+    {
+      "fracao_dos_clientes": 0.01,
+      "BG/NBD + Gamma-Gamma": 0.3207,
+      "Taxa histórica x ticket do cliente": 0.3206,
+      "Gasto histórico total": 0.3146,
+      "RFM (M = gasto total)": 0.0574,
+      "RFM (M = ticket médio)": 0.1159,
+      "Média da base (não ordena)": 0.0099,
+      "Ordem perfeita (teto)": 0.3502
+    },
+    {
+      "fracao_dos_clientes": 0.02,
+      "BG/NBD + Gamma-Gamma": 0.3925,
+      "Taxa histórica x ticket do cliente": 0.3866,
+      "Gasto histórico total": 0.3931,
+      "RFM (M = gasto total)": 0.1162,
+      "RFM (M = ticket médio)": 0.2346,
+      "Média da base (não ordena)": 0.0201,
+      "Ordem perfeita (teto)": 0.4287
+    },
+    {
+      "fracao_dos_clientes": 0.03,
+      "BG/NBD + Gamma-Gamma": 0.4367,
+      "Taxa histórica x ticket do cliente": 0.4278,
+      "Gasto histórico total": 0.4287,
+      "RFM (M = gasto total)": 0.1736,
+      "RFM (M = ticket médio)": 0.2941,
+      "Média da base (não ordena)": 0.03,
+      "Ordem perfeita (teto)": 0.4823
+    },
+    {
+      "fracao_dos_clientes": 0.04,
+      "BG/NBD + Gamma-Gamma": 0.4742,
+      "Taxa histórica x ticket do cliente": 0.4606,
+      "Gasto histórico total": 0.467,
+      "RFM (M = gasto total)": 0.231,
+      "RFM (M = ticket médio)": 0.336,
+      "Média da base (não ordena)": 0.04,
+      "Ordem perfeita (teto)": 0.5243
+    },
+    {
+      "fracao_dos_clientes": 0.05,
+      "BG/NBD + Gamma-Gamma": 0.5042,
+      "Taxa histórica x ticket do cliente": 0.4929,
+      "Gasto histórico total": 0.4979,
+      "RFM (M = gasto total)": 0.2884,
+      "RFM (M = ticket médio)": 0.3779,
+      "Média da base (não ordena)": 0.0499,
+      "Ordem perfeita (teto)": 0.5603
+    },
+    {
+      "fracao_dos_clientes": 0.06,
+      "BG/NBD + Gamma-Gamma": 0.5297,
+      "Taxa histórica x ticket do cliente": 0.5189,
+      "Gasto histórico total": 0.5286,
+      "RFM (M = gasto total)": 0.3471,
+      "RFM (M = ticket médio)": 0.4208,
+      "Média da base (não ordena)": 0.0601,
+      "Ordem perfeita (teto)": 0.5922
+    },
+    {
+      "fracao_dos_clientes": 0.07,
+      "BG/NBD + Gamma-Gamma": 0.5523,
+      "Taxa histórica x ticket do cliente": 0.5399,
+      "Gasto histórico total": 0.5504,
+      "RFM (M = gasto total)": 0.3858,
+      "RFM (M = ticket médio)": 0.4627,
+      "Média da base (não ordena)": 0.07,
+      "Ordem perfeita (teto)": 0.6194
+    },
+    {
+      "fracao_dos_clientes": 0.08,
+      "BG/NBD + Gamma-Gamma": 0.5766,
+      "Taxa histórica x ticket do cliente": 0.5587,
+      "Gasto histórico total": 0.5703,
+      "RFM (M = gasto total)": 0.416,
+      "RFM (M = ticket médio)": 0.494,
+      "Média da base (não ordena)": 0.0799,
+      "Ordem perfeita (teto)": 0.6439
+    },
+    {
+      "fracao_dos_clientes": 0.09,
+      "BG/NBD + Gamma-Gamma": 0.5985,
+      "Taxa histórica x ticket do cliente": 0.5809,
+      "Gasto histórico total": 0.589,
+      "RFM (M = gasto total)": 0.4469,
+      "RFM (M = ticket médio)": 0.5118,
+      "Média da base (não ordena)": 0.0901,
+      "Ordem perfeita (teto)": 0.6668
+    },
+    {
+      "fracao_dos_clientes": 0.1,
+      "BG/NBD + Gamma-Gamma": 0.6124,
+      "Taxa histórica x ticket do cliente": 0.5995,
+      "Gasto histórico total": 0.6075,
+      "RFM (M = gasto total)": 0.4771,
+      "RFM (M = ticket médio)": 0.5291,
+      "Média da base (não ordena)": 0.1,
+      "Ordem perfeita (teto)": 0.6875
+    },
+    {
+      "fracao_dos_clientes": 0.11,
+      "BG/NBD + Gamma-Gamma": 0.6292,
+      "Taxa histórica x ticket do cliente": 0.6167,
+      "Gasto histórico total": 0.6282,
+      "RFM (M = gasto total)": 0.5073,
+      "RFM (M = ticket médio)": 0.5464,
+      "Média da base (não ordena)": 0.11,
+      "Ordem perfeita (teto)": 0.7068
+    },
+    {
+      "fracao_dos_clientes": 0.12,
+      "BG/NBD + Gamma-Gamma": 0.6412,
+      "Taxa histórica x ticket do cliente": 0.6323,
+      "Gasto histórico total": 0.6445,
+      "RFM (M = gasto total)": 0.5375,
+      "RFM (M = ticket médio)": 0.5637,
+      "Média da base (não ordena)": 0.1199,
+      "Ordem perfeita (teto)": 0.7246
+    },
+    {
+      "fracao_dos_clientes": 0.13,
+      "BG/NBD + Gamma-Gamma": 0.6569,
+      "Taxa histórica x ticket do cliente": 0.6476,
+      "Gasto histórico total": 0.6572,
+      "RFM (M = gasto total)": 0.5685,
+      "RFM (M = ticket médio)": 0.5814,
+      "Média da base (não ordena)": 0.1301,
+      "Ordem perfeita (teto)": 0.7417
+    },
+    {
+      "fracao_dos_clientes": 0.14,
+      "BG/NBD + Gamma-Gamma": 0.6699,
+      "Taxa histórica x ticket do cliente": 0.6627,
+      "Gasto histórico total": 0.6693,
+      "RFM (M = gasto total)": 0.5918,
+      "RFM (M = ticket médio)": 0.5988,
+      "Média da base (não ordena)": 0.14,
+      "Ordem perfeita (teto)": 0.7571
+    },
+    {
+      "fracao_dos_clientes": 0.15,
+      "BG/NBD + Gamma-Gamma": 0.6811,
+      "Taxa histórica x ticket do cliente": 0.6762,
+      "Gasto histórico total": 0.6818,
+      "RFM (M = gasto total)": 0.6049,
+      "RFM (M = ticket médio)": 0.6142,
+      "Média da base (não ordena)": 0.1499,
+      "Ordem perfeita (teto)": 0.7715
+    },
+    {
+      "fracao_dos_clientes": 0.16,
+      "BG/NBD + Gamma-Gamma": 0.6921,
+      "Taxa histórica x ticket do cliente": 0.6899,
+      "Gasto histórico total": 0.6975,
+      "RFM (M = gasto total)": 0.6184,
+      "RFM (M = ticket médio)": 0.6298,
+      "Média da base (não ordena)": 0.1601,
+      "Ordem perfeita (teto)": 0.7853
+    },
+    {
+      "fracao_dos_clientes": 0.17,
+      "BG/NBD + Gamma-Gamma": 0.7054,
+      "Taxa histórica x ticket do cliente": 0.7027,
+      "Gasto histórico total": 0.7086,
+      "RFM (M = gasto total)": 0.6315,
+      "RFM (M = ticket médio)": 0.645,
+      "Média da base (não ordena)": 0.17,
+      "Ordem perfeita (teto)": 0.798
+    },
+    {
+      "fracao_dos_clientes": 0.18,
+      "BG/NBD + Gamma-Gamma": 0.7179,
+      "Taxa histórica x ticket do cliente": 0.7139,
+      "Gasto histórico total": 0.7195,
+      "RFM (M = gasto total)": 0.6447,
+      "RFM (M = ticket médio)": 0.6601,
+      "Média da base (não ordena)": 0.1799,
+      "Ordem perfeita (teto)": 0.8099
+    },
+    {
+      "fracao_dos_clientes": 0.19,
+      "BG/NBD + Gamma-Gamma": 0.7281,
+      "Taxa histórica x ticket do cliente": 0.7262,
+      "Gasto histórico total": 0.7293,
+      "RFM (M = gasto total)": 0.6581,
+      "RFM (M = ticket médio)": 0.6757,
+      "Média da base (não ordena)": 0.1901,
+      "Ordem perfeita (teto)": 0.8213
+    },
+    {
+      "fracao_dos_clientes": 0.2,
+      "BG/NBD + Gamma-Gamma": 0.741,
+      "Taxa histórica x ticket do cliente": 0.7385,
+      "Gasto histórico total": 0.7379,
+      "RFM (M = gasto total)": 0.6713,
+      "RFM (M = ticket médio)": 0.6908,
+      "Média da base (não ordena)": 0.2,
+      "Ordem perfeita (teto)": 0.8318
+    },
+    {
+      "fracao_dos_clientes": 0.21,
+      "BG/NBD + Gamma-Gamma": 0.7518,
+      "Taxa histórica x ticket do cliente": 0.7485,
+      "Gasto histórico total": 0.7473,
+      "RFM (M = gasto total)": 0.6844,
+      "RFM (M = ticket médio)": 0.706,
+      "Média da base (não ordena)": 0.21,
+      "Ordem perfeita (teto)": 0.8419
+    },
+    {
+      "fracao_dos_clientes": 0.22,
+      "BG/NBD + Gamma-Gamma": 0.7601,
+      "Taxa histórica x ticket do cliente": 0.7561,
+      "Gasto histórico total": 0.7561,
+      "RFM (M = gasto total)": 0.6972,
+      "RFM (M = ticket médio)": 0.7212,
+      "Média da base (não ordena)": 0.2199,
+      "Ordem perfeita (teto)": 0.8514
+    },
+    {
+      "fracao_dos_clientes": 0.23,
+      "BG/NBD + Gamma-Gamma": 0.7689,
+      "Taxa histórica x ticket do cliente": 0.7641,
+      "Gasto histórico total": 0.7656,
+      "RFM (M = gasto total)": 0.7102,
+      "RFM (M = ticket médio)": 0.7367,
+      "Média da base (não ordena)": 0.2301,
+      "Ordem perfeita (teto)": 0.8608
+    },
+    {
+      "fracao_dos_clientes": 0.24,
+      "BG/NBD + Gamma-Gamma": 0.7798,
+      "Taxa histórica x ticket do cliente": 0.7745,
+      "Gasto histórico total": 0.774,
+      "RFM (M = gasto total)": 0.723,
+      "RFM (M = ticket médio)": 0.7474,
+      "Média da base (não ordena)": 0.24,
+      "Ordem perfeita (teto)": 0.8694
+    },
+    {
+      "fracao_dos_clientes": 0.25,
+      "BG/NBD + Gamma-Gamma": 0.7866,
+      "Taxa histórica x ticket do cliente": 0.7815,
+      "Gasto histórico total": 0.7831,
+      "RFM (M = gasto total)": 0.7358,
+      "RFM (M = ticket médio)": 0.7555,
+      "Média da base (não ordena)": 0.2499,
+      "Ordem perfeita (teto)": 0.8776
+    },
+    {
+      "fracao_dos_clientes": 0.26,
+      "BG/NBD + Gamma-Gamma": 0.7946,
+      "Taxa histórica x ticket do cliente": 0.7885,
+      "Gasto histórico total": 0.7912,
+      "RFM (M = gasto total)": 0.7489,
+      "RFM (M = ticket médio)": 0.7639,
+      "Média da base (não ordena)": 0.2601,
+      "Ordem perfeita (teto)": 0.8854
+    },
+    {
+      "fracao_dos_clientes": 0.27,
+      "BG/NBD + Gamma-Gamma": 0.8012,
+      "Taxa histórica x ticket do cliente": 0.7973,
+      "Gasto histórico total": 0.7977,
+      "RFM (M = gasto total)": 0.7617,
+      "RFM (M = ticket médio)": 0.772,
+      "Média da base (não ordena)": 0.27,
+      "Ordem perfeita (teto)": 0.8925
+    },
+    {
+      "fracao_dos_clientes": 0.28,
+      "BG/NBD + Gamma-Gamma": 0.8077,
+      "Taxa histórica x ticket do cliente": 0.8052,
+      "Gasto histórico total": 0.8056,
+      "RFM (M = gasto total)": 0.7745,
+      "RFM (M = ticket médio)": 0.7801,
+      "Média da base (não ordena)": 0.28,
+      "Ordem perfeita (teto)": 0.8992
+    },
+    {
+      "fracao_dos_clientes": 0.29,
+      "BG/NBD + Gamma-Gamma": 0.8147,
+      "Taxa histórica x ticket do cliente": 0.811,
+      "Gasto histórico total": 0.8128,
+      "RFM (M = gasto total)": 0.7843,
+      "RFM (M = ticket médio)": 0.7883,
+      "Média da base (não ordena)": 0.2899,
+      "Ordem perfeita (teto)": 0.9056
+    },
+    {
+      "fracao_dos_clientes": 0.3,
+      "BG/NBD + Gamma-Gamma": 0.8223,
+      "Taxa histórica x ticket do cliente": 0.8178,
+      "Gasto histórico total": 0.8195,
+      "RFM (M = gasto total)": 0.7914,
+      "RFM (M = ticket médio)": 0.7966,
+      "Média da base (não ordena)": 0.3001,
+      "Ordem perfeita (teto)": 0.9117
+    },
+    {
+      "fracao_dos_clientes": 0.31,
+      "BG/NBD + Gamma-Gamma": 0.8279,
+      "Taxa histórica x ticket do cliente": 0.8238,
+      "Gasto histórico total": 0.8259,
+      "RFM (M = gasto total)": 0.7983,
+      "RFM (M = ticket médio)": 0.8048,
+      "Média da base (não ordena)": 0.31,
+      "Ordem perfeita (teto)": 0.9174
+    },
+    {
+      "fracao_dos_clientes": 0.32,
+      "BG/NBD + Gamma-Gamma": 0.8318,
+      "Taxa histórica x ticket do cliente": 0.8309,
+      "Gasto histórico total": 0.834,
+      "RFM (M = gasto total)": 0.8053,
+      "RFM (M = ticket médio)": 0.8129,
+      "Média da base (não ordena)": 0.3199,
+      "Ordem perfeita (teto)": 0.9228
+    },
+    {
+      "fracao_dos_clientes": 0.33,
+      "BG/NBD + Gamma-Gamma": 0.8378,
+      "Taxa histórica x ticket do cliente": 0.8351,
+      "Gasto histórico total": 0.8425,
+      "RFM (M = gasto total)": 0.8124,
+      "RFM (M = ticket médio)": 0.8213,
+      "Média da base (não ordena)": 0.3301,
+      "Ordem perfeita (teto)": 0.9279
+    },
+    {
+      "fracao_dos_clientes": 0.34,
+      "BG/NBD + Gamma-Gamma": 0.8426,
+      "Taxa histórica x ticket do cliente": 0.8397,
+      "Gasto histórico total": 0.8475,
+      "RFM (M = gasto total)": 0.8193,
+      "RFM (M = ticket médio)": 0.8294,
+      "Média da base (não ordena)": 0.34,
+      "Ordem perfeita (teto)": 0.9327
+    },
+    {
+      "fracao_dos_clientes": 0.35,
+      "BG/NBD + Gamma-Gamma": 0.8479,
+      "Taxa histórica x ticket do cliente": 0.8455,
+      "Gasto histórico total": 0.8517,
+      "RFM (M = gasto total)": 0.8262,
+      "RFM (M = ticket médio)": 0.8362,
+      "Média da base (não ordena)": 0.35,
+      "Ordem perfeita (teto)": 0.9372
+    },
+    {
+      "fracao_dos_clientes": 0.36,
+      "BG/NBD + Gamma-Gamma": 0.8518,
+      "Taxa histórica x ticket do cliente": 0.8515,
+      "Gasto histórico total": 0.8562,
+      "RFM (M = gasto total)": 0.8331,
+      "RFM (M = ticket médio)": 0.8415,
+      "Média da base (não ordena)": 0.3599,
+      "Ordem perfeita (teto)": 0.9415
+    },
+    {
+      "fracao_dos_clientes": 0.37,
+      "BG/NBD + Gamma-Gamma": 0.8552,
+      "Taxa histórica x ticket do cliente": 0.8572,
+      "Gasto histórico total": 0.8606,
+      "RFM (M = gasto total)": 0.8402,
+      "RFM (M = ticket médio)": 0.8469,
+      "Média da base (não ordena)": 0.3701,
+      "Ordem perfeita (teto)": 0.9457
+    },
+    {
+      "fracao_dos_clientes": 0.38,
+      "BG/NBD + Gamma-Gamma": 0.8591,
+      "Taxa histórica x ticket do cliente": 0.8616,
+      "Gasto histórico total": 0.866,
+      "RFM (M = gasto total)": 0.8468,
+      "RFM (M = ticket médio)": 0.8522,
+      "Média da base (não ordena)": 0.38,
+      "Ordem perfeita (teto)": 0.9496
+    },
+    {
+      "fracao_dos_clientes": 0.39,
+      "BG/NBD + Gamma-Gamma": 0.864,
+      "Taxa histórica x ticket do cliente": 0.8657,
+      "Gasto histórico total": 0.8701,
+      "RFM (M = gasto total)": 0.8522,
+      "RFM (M = ticket médio)": 0.8575,
+      "Média da base (não ordena)": 0.3899,
+      "Ordem perfeita (teto)": 0.9534
+    },
+    {
+      "fracao_dos_clientes": 0.4,
+      "BG/NBD + Gamma-Gamma": 0.8693,
+      "Taxa histórica x ticket do cliente": 0.8703,
+      "Gasto histórico total": 0.873,
+      "RFM (M = gasto total)": 0.8577,
+      "RFM (M = ticket médio)": 0.8629,
+      "Média da base (não ordena)": 0.4001,
+      "Ordem perfeita (teto)": 0.957
+    },
+    {
+      "fracao_dos_clientes": 0.41,
+      "BG/NBD + Gamma-Gamma": 0.8737,
+      "Taxa histórica x ticket do cliente": 0.8751,
+      "Gasto histórico total": 0.8761,
+      "RFM (M = gasto total)": 0.8631,
+      "RFM (M = ticket médio)": 0.8682,
+      "Média da base (não ordena)": 0.41,
+      "Ordem perfeita (teto)": 0.9604
+    },
+    {
+      "fracao_dos_clientes": 0.42,
+      "BG/NBD + Gamma-Gamma": 0.877,
+      "Taxa histórica x ticket do cliente": 0.8794,
+      "Gasto histórico total": 0.8798,
+      "RFM (M = gasto total)": 0.8685,
+      "RFM (M = ticket médio)": 0.8735,
+      "Média da base (não ordena)": 0.42,
+      "Ordem perfeita (teto)": 0.9635
+    },
+    {
+      "fracao_dos_clientes": 0.43,
+      "BG/NBD + Gamma-Gamma": 0.8809,
+      "Taxa histórica x ticket do cliente": 0.8824,
+      "Gasto histórico total": 0.8848,
+      "RFM (M = gasto total)": 0.8739,
+      "RFM (M = ticket médio)": 0.8788,
+      "Média da base (não ordena)": 0.4299,
+      "Ordem perfeita (teto)": 0.9665
+    },
+    {
+      "fracao_dos_clientes": 0.44,
+      "BG/NBD + Gamma-Gamma": 0.8864,
+      "Taxa histórica x ticket do cliente": 0.8845,
+      "Gasto histórico total": 0.8883,
+      "RFM (M = gasto total)": 0.8794,
+      "RFM (M = ticket médio)": 0.8843,
+      "Média da base (não ordena)": 0.4401,
+      "Ordem perfeita (teto)": 0.9694
+    },
+    {
+      "fracao_dos_clientes": 0.45,
+      "BG/NBD + Gamma-Gamma": 0.8899,
+      "Taxa histórica x ticket do cliente": 0.888,
+      "Gasto histórico total": 0.8911,
+      "RFM (M = gasto total)": 0.8848,
+      "RFM (M = ticket médio)": 0.8895,
+      "Média da base (não ordena)": 0.45,
+      "Ordem perfeita (teto)": 0.972
+    },
+    {
+      "fracao_dos_clientes": 0.46,
+      "BG/NBD + Gamma-Gamma": 0.8935,
+      "Taxa histórica x ticket do cliente": 0.8914,
+      "Gasto histórico total": 0.8955,
+      "RFM (M = gasto total)": 0.8902,
+      "RFM (M = ticket médio)": 0.893,
+      "Média da base (não ordena)": 0.4599,
+      "Ordem perfeita (teto)": 0.9745
+    },
+    {
+      "fracao_dos_clientes": 0.47,
+      "BG/NBD + Gamma-Gamma": 0.897,
+      "Taxa histórica x ticket do cliente": 0.8943,
+      "Gasto histórico total": 0.8993,
+      "RFM (M = gasto total)": 0.8947,
+      "RFM (M = ticket médio)": 0.8962,
+      "Média da base (não ordena)": 0.4701,
+      "Ordem perfeita (teto)": 0.9769
+    },
+    {
+      "fracao_dos_clientes": 0.48,
+      "BG/NBD + Gamma-Gamma": 0.9012,
+      "Taxa histórica x ticket do cliente": 0.8967,
+      "Gasto histórico total": 0.9014,
+      "RFM (M = gasto total)": 0.8979,
+      "RFM (M = ticket médio)": 0.8993,
+      "Média da base (não ordena)": 0.48,
+      "Ordem perfeita (teto)": 0.9792
+    },
+    {
+      "fracao_dos_clientes": 0.49,
+      "BG/NBD + Gamma-Gamma": 0.9046,
+      "Taxa histórica x ticket do cliente": 0.9001,
+      "Gasto histórico total": 0.9042,
+      "RFM (M = gasto total)": 0.901,
+      "RFM (M = ticket médio)": 0.9024,
+      "Média da base (não ordena)": 0.49,
+      "Ordem perfeita (teto)": 0.9813
+    },
+    {
+      "fracao_dos_clientes": 0.5,
+      "BG/NBD + Gamma-Gamma": 0.908,
+      "Taxa histórica x ticket do cliente": 0.9019,
+      "Gasto histórico total": 0.9086,
+      "RFM (M = gasto total)": 0.9042,
+      "RFM (M = ticket médio)": 0.9055,
+      "Média da base (não ordena)": 0.4999,
+      "Ordem perfeita (teto)": 0.9833
+    },
+    {
+      "fracao_dos_clientes": 0.51,
+      "BG/NBD + Gamma-Gamma": 0.9125,
+      "Taxa histórica x ticket do cliente": 0.9041,
+      "Gasto histórico total": 0.9126,
+      "RFM (M = gasto total)": 0.9075,
+      "RFM (M = ticket médio)": 0.9087,
+      "Média da base (não ordena)": 0.51,
+      "Ordem perfeita (teto)": 0.9853
+    },
+    {
+      "fracao_dos_clientes": 0.52,
+      "BG/NBD + Gamma-Gamma": 0.9147,
+      "Taxa histórica x ticket do cliente": 0.9067,
+      "Gasto histórico total": 0.9173,
+      "RFM (M = gasto total)": 0.9106,
+      "RFM (M = ticket médio)": 0.9118,
+      "Média da base (não ordena)": 0.52,
+      "Ordem perfeita (teto)": 0.9872
+    },
+    {
+      "fracao_dos_clientes": 0.53,
+      "BG/NBD + Gamma-Gamma": 0.918,
+      "Taxa histórica x ticket do cliente": 0.9104,
+      "Gasto histórico total": 0.9203,
+      "RFM (M = gasto total)": 0.9138,
+      "RFM (M = ticket médio)": 0.9149,
+      "Média da base (não ordena)": 0.5299,
+      "Ordem perfeita (teto)": 0.9889
+    },
+    {
+      "fracao_dos_clientes": 0.54,
+      "BG/NBD + Gamma-Gamma": 0.9199,
+      "Taxa histórica x ticket do cliente": 0.9136,
+      "Gasto histórico total": 0.9245,
+      "RFM (M = gasto total)": 0.917,
+      "RFM (M = ticket médio)": 0.9181,
+      "Média da base (não ordena)": 0.5401,
+      "Ordem perfeita (teto)": 0.9905
+    },
+    {
+      "fracao_dos_clientes": 0.55,
+      "BG/NBD + Gamma-Gamma": 0.9231,
+      "Taxa histórica x ticket do cliente": 0.9166,
+      "Gasto histórico total": 0.9291,
+      "RFM (M = gasto total)": 0.9199,
+      "RFM (M = ticket médio)": 0.9212,
+      "Média da base (não ordena)": 0.55,
+      "Ordem perfeita (teto)": 0.992
+    },
+    {
+      "fracao_dos_clientes": 0.56,
+      "BG/NBD + Gamma-Gamma": 0.9251,
+      "Taxa histórica x ticket do cliente": 0.9184,
+      "Gasto histórico total": 0.9311,
+      "RFM (M = gasto total)": 0.9226,
+      "RFM (M = ticket médio)": 0.9243,
+      "Média da base (não ordena)": 0.5599,
+      "Ordem perfeita (teto)": 0.9934
+    },
+    {
+      "fracao_dos_clientes": 0.57,
+      "BG/NBD + Gamma-Gamma": 0.9276,
+      "Taxa histórica x ticket do cliente": 0.9207,
+      "Gasto histórico total": 0.9337,
+      "RFM (M = gasto total)": 0.9254,
+      "RFM (M = ticket médio)": 0.9272,
+      "Média da base (não ordena)": 0.5701,
+      "Ordem perfeita (teto)": 0.9946
+    },
+    {
+      "fracao_dos_clientes": 0.58,
+      "BG/NBD + Gamma-Gamma": 0.9298,
+      "Taxa histórica x ticket do cliente": 0.923,
+      "Gasto histórico total": 0.9367,
+      "RFM (M = gasto total)": 0.9282,
+      "RFM (M = ticket médio)": 0.9301,
+      "Média da base (não ordena)": 0.58,
+      "Ordem perfeita (teto)": 0.9957
+    },
+    {
+      "fracao_dos_clientes": 0.59,
+      "BG/NBD + Gamma-Gamma": 0.9322,
+      "Taxa histórica x ticket do cliente": 0.9246,
+      "Gasto histórico total": 0.9394,
+      "RFM (M = gasto total)": 0.9309,
+      "RFM (M = ticket médio)": 0.9329,
+      "Média da base (não ordena)": 0.59,
+      "Ordem perfeita (teto)": 0.9968
+    },
+    {
+      "fracao_dos_clientes": 0.6,
+      "BG/NBD + Gamma-Gamma": 0.9349,
+      "Taxa histórica x ticket do cliente": 0.9262,
+      "Gasto histórico total": 0.9422,
+      "RFM (M = gasto total)": 0.9336,
+      "RFM (M = ticket médio)": 0.9357,
+      "Média da base (não ordena)": 0.5999,
+      "Ordem perfeita (teto)": 0.9977
+    },
+    {
+      "fracao_dos_clientes": 0.61,
+      "BG/NBD + Gamma-Gamma": 0.9368,
+      "Taxa histórica x ticket do cliente": 0.9281,
+      "Gasto histórico total": 0.9455,
+      "RFM (M = gasto total)": 0.9364,
+      "RFM (M = ticket médio)": 0.9386,
+      "Média da base (não ordena)": 0.6101,
+      "Ordem perfeita (teto)": 0.9985
+    },
+    {
+      "fracao_dos_clientes": 0.62,
+      "BG/NBD + Gamma-Gamma": 0.9388,
+      "Taxa histórica x ticket do cliente": 0.9295,
+      "Gasto histórico total": 0.9505,
+      "RFM (M = gasto total)": 0.939,
+      "RFM (M = ticket médio)": 0.9415,
+      "Média da base (não ordena)": 0.62,
+      "Ordem perfeita (teto)": 0.9992
+    },
+    {
+      "fracao_dos_clientes": 0.63,
+      "BG/NBD + Gamma-Gamma": 0.9421,
+      "Taxa histórica x ticket do cliente": 0.93,
+      "Gasto histórico total": 0.9527,
+      "RFM (M = gasto total)": 0.9413,
+      "RFM (M = ticket médio)": 0.9443,
+      "Média da base (não ordena)": 0.6299,
+      "Ordem perfeita (teto)": 0.9998
+    },
+    {
+      "fracao_dos_clientes": 0.64,
+      "BG/NBD + Gamma-Gamma": 0.9447,
+      "Taxa histórica x ticket do cliente": 0.9311,
+      "Gasto histórico total": 0.9544,
+      "RFM (M = gasto total)": 0.9436,
+      "RFM (M = ticket médio)": 0.9472,
+      "Média da base (não ordena)": 0.6401,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.65,
+      "BG/NBD + Gamma-Gamma": 0.9468,
+      "Taxa histórica x ticket do cliente": 0.933,
+      "Gasto histórico total": 0.9558,
+      "RFM (M = gasto total)": 0.9459,
+      "RFM (M = ticket médio)": 0.9501,
+      "Média da base (não ordena)": 0.65,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.66,
+      "BG/NBD + Gamma-Gamma": 0.9485,
+      "Taxa histórica x ticket do cliente": 0.9349,
+      "Gasto histórico total": 0.9578,
+      "RFM (M = gasto total)": 0.9481,
+      "RFM (M = ticket médio)": 0.9528,
+      "Média da base (não ordena)": 0.66,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.67,
+      "BG/NBD + Gamma-Gamma": 0.9515,
+      "Taxa histórica x ticket do cliente": 0.9368,
+      "Gasto histórico total": 0.9593,
+      "RFM (M = gasto total)": 0.9504,
+      "RFM (M = ticket médio)": 0.955,
+      "Média da base (não ordena)": 0.6699,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.68,
+      "BG/NBD + Gamma-Gamma": 0.9535,
+      "Taxa histórica x ticket do cliente": 0.9387,
+      "Gasto histórico total": 0.9608,
+      "RFM (M = gasto total)": 0.9527,
+      "RFM (M = ticket médio)": 0.9573,
+      "Média da base (não ordena)": 0.6801,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.69,
+      "BG/NBD + Gamma-Gamma": 0.9573,
+      "Taxa histórica x ticket do cliente": 0.9406,
+      "Gasto histórico total": 0.9616,
+      "RFM (M = gasto total)": 0.9549,
+      "RFM (M = ticket médio)": 0.9595,
+      "Média da base (não ordena)": 0.69,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.7,
+      "BG/NBD + Gamma-Gamma": 0.9595,
+      "Taxa histórica x ticket do cliente": 0.9425,
+      "Gasto histórico total": 0.9629,
+      "RFM (M = gasto total)": 0.9572,
+      "RFM (M = ticket médio)": 0.9617,
+      "Média da base (não ordena)": 0.6999,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.71,
+      "BG/NBD + Gamma-Gamma": 0.9617,
+      "Taxa histórica x ticket do cliente": 0.9445,
+      "Gasto histórico total": 0.965,
+      "RFM (M = gasto total)": 0.9594,
+      "RFM (M = ticket médio)": 0.9639,
+      "Média da base (não ordena)": 0.7101,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.72,
+      "BG/NBD + Gamma-Gamma": 0.9635,
+      "Taxa histórica x ticket do cliente": 0.9464,
+      "Gasto histórico total": 0.9668,
+      "RFM (M = gasto total)": 0.9616,
+      "RFM (M = ticket médio)": 0.9661,
+      "Média da base (não ordena)": 0.72,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.73,
+      "BG/NBD + Gamma-Gamma": 0.9651,
+      "Taxa histórica x ticket do cliente": 0.9483,
+      "Gasto histórico total": 0.9687,
+      "RFM (M = gasto total)": 0.9638,
+      "RFM (M = ticket médio)": 0.9683,
+      "Média da base (não ordena)": 0.73,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.74,
+      "BG/NBD + Gamma-Gamma": 0.9666,
+      "Taxa histórica x ticket do cliente": 0.9502,
+      "Gasto histórico total": 0.9706,
+      "RFM (M = gasto total)": 0.966,
+      "RFM (M = ticket médio)": 0.9705,
+      "Média da base (não ordena)": 0.7399,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.75,
+      "BG/NBD + Gamma-Gamma": 0.9686,
+      "Taxa histórica x ticket do cliente": 0.9521,
+      "Gasto histórico total": 0.9719,
+      "RFM (M = gasto total)": 0.9683,
+      "RFM (M = ticket médio)": 0.9728,
+      "Média da base (não ordena)": 0.7501,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.76,
+      "BG/NBD + Gamma-Gamma": 0.9705,
+      "Taxa histórica x ticket do cliente": 0.954,
+      "Gasto histórico total": 0.9737,
+      "RFM (M = gasto total)": 0.9705,
+      "RFM (M = ticket médio)": 0.9746,
+      "Média da base (não ordena)": 0.76,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.77,
+      "BG/NBD + Gamma-Gamma": 0.9725,
+      "Taxa histórica x ticket do cliente": 0.9559,
+      "Gasto histórico total": 0.9751,
+      "RFM (M = gasto total)": 0.9726,
+      "RFM (M = ticket médio)": 0.9762,
+      "Média da base (não ordena)": 0.7699,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.78,
+      "BG/NBD + Gamma-Gamma": 0.9744,
+      "Taxa histórica x ticket do cliente": 0.9579,
+      "Gasto histórico total": 0.9772,
+      "RFM (M = gasto total)": 0.9743,
+      "RFM (M = ticket médio)": 0.978,
+      "Média da base (não ordena)": 0.7801,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.79,
+      "BG/NBD + Gamma-Gamma": 0.9758,
+      "Taxa histórica x ticket do cliente": 0.9598,
+      "Gasto histórico total": 0.9795,
+      "RFM (M = gasto total)": 0.9759,
+      "RFM (M = ticket médio)": 0.9797,
+      "Média da base (não ordena)": 0.79,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.8,
+      "BG/NBD + Gamma-Gamma": 0.9784,
+      "Taxa histórica x ticket do cliente": 0.9617,
+      "Gasto histórico total": 0.9807,
+      "RFM (M = gasto total)": 0.9776,
+      "RFM (M = ticket médio)": 0.9814,
+      "Média da base (não ordena)": 0.8,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.81,
+      "BG/NBD + Gamma-Gamma": 0.9796,
+      "Taxa histórica x ticket do cliente": 0.9636,
+      "Gasto histórico total": 0.9818,
+      "RFM (M = gasto total)": 0.9792,
+      "RFM (M = ticket médio)": 0.9831,
+      "Média da base (não ordena)": 0.8099,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.82,
+      "BG/NBD + Gamma-Gamma": 0.9809,
+      "Taxa histórica x ticket do cliente": 0.9655,
+      "Gasto histórico total": 0.9831,
+      "RFM (M = gasto total)": 0.9809,
+      "RFM (M = ticket médio)": 0.9848,
+      "Média da base (não ordena)": 0.8201,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.83,
+      "BG/NBD + Gamma-Gamma": 0.9826,
+      "Taxa histórica x ticket do cliente": 0.9674,
+      "Gasto histórico total": 0.9843,
+      "RFM (M = gasto total)": 0.9826,
+      "RFM (M = ticket médio)": 0.9865,
+      "Média da base (não ordena)": 0.83,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.84,
+      "BG/NBD + Gamma-Gamma": 0.9837,
+      "Taxa histórica x ticket do cliente": 0.9693,
+      "Gasto histórico total": 0.9858,
+      "RFM (M = gasto total)": 0.9842,
+      "RFM (M = ticket médio)": 0.9878,
+      "Média da base (não ordena)": 0.8399,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.85,
+      "BG/NBD + Gamma-Gamma": 0.9846,
+      "Taxa histórica x ticket do cliente": 0.9713,
+      "Gasto histórico total": 0.9871,
+      "RFM (M = gasto total)": 0.9856,
+      "RFM (M = ticket médio)": 0.989,
+      "Média da base (não ordena)": 0.8501,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.86,
+      "BG/NBD + Gamma-Gamma": 0.9886,
+      "Taxa histórica x ticket do cliente": 0.9732,
+      "Gasto histórico total": 0.9879,
+      "RFM (M = gasto total)": 0.987,
+      "RFM (M = ticket médio)": 0.9901,
+      "Média da base (não ordena)": 0.86,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.87,
+      "BG/NBD + Gamma-Gamma": 0.9895,
+      "Taxa histórica x ticket do cliente": 0.9751,
+      "Gasto histórico total": 0.9889,
+      "RFM (M = gasto total)": 0.9884,
+      "RFM (M = ticket médio)": 0.9913,
+      "Média da base (não ordena)": 0.8699,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.88,
+      "BG/NBD + Gamma-Gamma": 0.9903,
+      "Taxa histórica x ticket do cliente": 0.977,
+      "Gasto histórico total": 0.9895,
+      "RFM (M = gasto total)": 0.9898,
+      "RFM (M = ticket médio)": 0.9925,
+      "Média da base (não ordena)": 0.8801,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.89,
+      "BG/NBD + Gamma-Gamma": 0.992,
+      "Taxa histórica x ticket do cliente": 0.9789,
+      "Gasto histórico total": 0.9907,
+      "RFM (M = gasto total)": 0.9913,
+      "RFM (M = ticket médio)": 0.9937,
+      "Média da base (não ordena)": 0.89,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.9,
+      "BG/NBD + Gamma-Gamma": 0.9929,
+      "Taxa histórica x ticket do cliente": 0.9808,
+      "Gasto histórico total": 0.9912,
+      "RFM (M = gasto total)": 0.9927,
+      "RFM (M = ticket médio)": 0.9946,
+      "Média da base (não ordena)": 0.9,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.91,
+      "BG/NBD + Gamma-Gamma": 0.9943,
+      "Taxa histórica x ticket do cliente": 0.9827,
+      "Gasto histórico total": 0.9929,
+      "RFM (M = gasto total)": 0.9941,
+      "RFM (M = ticket médio)": 0.9951,
+      "Média da base (não ordena)": 0.9099,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.92,
+      "BG/NBD + Gamma-Gamma": 0.995,
+      "Taxa histórica x ticket do cliente": 0.9847,
+      "Gasto histórico total": 0.9943,
+      "RFM (M = gasto total)": 0.9955,
+      "RFM (M = ticket médio)": 0.9956,
+      "Média da base (não ordena)": 0.9201,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.93,
+      "BG/NBD + Gamma-Gamma": 0.9953,
+      "Taxa histórica x ticket do cliente": 0.9866,
+      "Gasto histórico total": 0.9958,
+      "RFM (M = gasto total)": 0.9962,
+      "RFM (M = ticket médio)": 0.9961,
+      "Média da base (não ordena)": 0.93,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.94,
+      "BG/NBD + Gamma-Gamma": 0.9961,
+      "Taxa histórica x ticket do cliente": 0.9885,
+      "Gasto histórico total": 0.9965,
+      "RFM (M = gasto total)": 0.9967,
+      "RFM (M = ticket médio)": 0.9966,
+      "Média da base (não ordena)": 0.9399,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.95,
+      "BG/NBD + Gamma-Gamma": 0.9976,
+      "Taxa histórica x ticket do cliente": 0.9904,
+      "Gasto histórico total": 0.9973,
+      "RFM (M = gasto total)": 0.9973,
+      "RFM (M = ticket médio)": 0.9971,
+      "Média da base (não ordena)": 0.9501,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.96,
+      "BG/NBD + Gamma-Gamma": 0.998,
+      "Taxa histórica x ticket do cliente": 0.9923,
+      "Gasto histórico total": 0.9982,
+      "RFM (M = gasto total)": 0.9978,
+      "RFM (M = ticket médio)": 0.9977,
+      "Média da base (não ordena)": 0.96,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.97,
+      "BG/NBD + Gamma-Gamma": 0.9988,
+      "Taxa histórica x ticket do cliente": 0.9942,
+      "Gasto histórico total": 0.9991,
+      "RFM (M = gasto total)": 0.9984,
+      "RFM (M = ticket médio)": 0.9983,
+      "Média da base (não ordena)": 0.97,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.98,
+      "BG/NBD + Gamma-Gamma": 0.9991,
+      "Taxa histórica x ticket do cliente": 0.9962,
+      "Gasto histórico total": 0.9993,
+      "RFM (M = gasto total)": 0.9989,
+      "RFM (M = ticket médio)": 0.9988,
+      "Média da base (não ordena)": 0.9799,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 0.99,
+      "BG/NBD + Gamma-Gamma": 0.9998,
+      "Taxa histórica x ticket do cliente": 0.9981,
+      "Gasto histórico total": 0.9996,
+      "RFM (M = gasto total)": 0.9995,
+      "RFM (M = ticket médio)": 0.9994,
+      "Média da base (não ordena)": 0.9901,
+      "Ordem perfeita (teto)": 1.0
+    },
+    {
+      "fracao_dos_clientes": 1.0,
+      "BG/NBD + Gamma-Gamma": 1.0,
+      "Taxa histórica x ticket do cliente": 1.0,
+      "Gasto histórico total": 1.0,
+      "RFM (M = gasto total)": 1.0,
+      "RFM (M = ticket médio)": 1.0,
+      "Média da base (não ordena)": 1.0,
+      "Ordem perfeita (teto)": 1.0
+    }
+  ],
+  "independencia_frequencia_valor": {
+    "correlacao_de_postos": 0.2203215830284368,
+    "correlacao_de_postos_ic": [
+      0.19116419929104042,
+      0.24853984191440628
+    ],
+    "correlacao_linear": 0.11706900590288542,
+    "correlacao_linear_ic": [
+      0.06519700650332579,
+      0.18062182514025
+    ],
+    "ticket_por_faixa_de_compras": {
+      "1": {
+        "clientes": 1490,
+        "ticket_mediano": 249.19,
+        "ticket_medio": 370.567033557
+      },
+      "2": {
+        "clientes": 846,
+        "ticket_mediano": 286.1825,
+        "ticket_medio": 379.5973286052
+      },
+      "3 a 5": {
+        "clientes": 1110,
+        "ticket_mediano": 318.429,
+        "ticket_medio": 430.6575067568
+      },
+      "6 a 10": {
+        "clientes": 539,
+        "ticket_mediano": 327.13,
+        "ticket_medio": 409.1382004152
+      },
+      "11 ou mais": {
+        "clientes": 244,
+        "ticket_mediano": 425.7341111111,
+        "ticket_medio": 641.1163365539
+      }
+    }
+  },
+  "erro_no_ticket": {
+    "Gamma-Gamma": {
+      "clientes": 2698.0,
+      "erro_absoluto_medio": 159.538590594,
+      "erro_absoluto_mediano": 98.0924838802,
+      "eam_com_1_compra_no_historico": 180.3692266566,
+      "eam_com_2_ou_mais": 153.7462725605,
+      "eam_menos_media_do_cliente": -8.7889819404,
+      "diferenca_inferior": -15.3549391516,
+      "diferenca_superior": -3.0356493034
+    },
+    "Média do próprio cliente": {
+      "clientes": 2698.0,
+      "erro_absoluto_medio": 168.3275725344,
+      "erro_absoluto_mediano": 82.4366666667,
+      "eam_com_1_compra_no_historico": 204.6896798205,
+      "eam_com_2_ou_mais": 158.2164607499,
+      "eam_menos_media_do_cliente": 0.0,
+      "diferenca_inferior": 0.0,
+      "diferenca_superior": 0.0
+    },
+    "Média da base": {
+      "clientes": 2698.0,
+      "erro_absoluto_medio": 246.8904515019,
+      "erro_absoluto_mediano": 177.1465366855,
+      "eam_com_1_compra_no_historico": 232.7444612149,
+      "eam_com_2_ou_mais": 250.8239883557,
+      "eam_menos_media_do_cliente": 78.5628789675,
+      "diferenca_inferior": 65.1800821161,
+      "diferenca_superior": 92.491887949
+    }
+  },
+  "cliente_novo": {
+    "fim_do_primeiro_mes": "2009-12-31",
+    "clientes_do_primeiro_mes": 951,
+    "novos_por_mes_depois_do_primeiro": 298.0,
+    "novos_por_mes_na_validacao": 132.16666666666666,
+    "diagnostico_bgnbd": {
+      "r": 1.1967892232835413,
+      "alfa": 18.444617986439006,
+      "a": 0.002268461107670703,
+      "b": 157.23878053374702,
+      "log_verossimilhanca": -19340.865659695854,
+      "convergiu": true
+    },
+    "tabela": {
+      "13 semanas": {
+        "clientes_novos_acompanhados": 1022.0,
+        "real_recompras": 0.7622309198,
+        "real_recompras_inferior": 0.6809931507,
+        "real_recompras_superior": 0.8493395303,
+        "real_receita": 291.2297651663,
+        "real_receita_inferior": 218.8782477984,
+        "real_receita_superior": 408.9741093444,
+        "real_parcela_sem_recompra": 0.5939334638,
+        "real_receita_mediana": 0.0,
+        "real_valor_da_primeira_compra": 372.286037182,
+        "modelo_recompras": 1.0962238286,
+        "modelo_recompras_inferior": 1.0436293676,
+        "modelo_recompras_superior": 1.1507756219,
+        "modelo_receita": 444.3656301994,
+        "modelo_receita_inferior": 416.5949073743,
+        "modelo_receita_superior": 473.8102568689,
+        "modelo_sobre_real": 1.5258249099,
+        "media_da_base_recompras": 1.175676116,
+        "media_da_base_receita": 480.4653649696,
+        "coortes_antigas_clientes": 3294.0,
+        "coortes_antigas_recompras": 0.9872495446,
+        "coortes_antigas_receita": 493.5841196114,
+        "diagnostico_modelo_recompras": 0.8435028023,
+        "diagnostico_modelo_receita": 327.5542362675,
+        "diagnostico_coortes_clientes": 2343.0,
+        "diagnostico_coortes_recompras": 0.7383696116,
+        "diagnostico_coortes_receita": 271.7689799402
+      },
+      "26 semanas": {
+        "clientes_novos_acompanhados": 716.0,
+        "real_recompras": 1.3268156425,
+        "real_recompras_inferior": 1.1661662011,
+        "real_recompras_superior": 1.498603352,
+        "real_receita": 473.4649860335,
+        "real_receita_inferior": 383.2357898045,
+        "real_receita_superior": 576.3513285615,
+        "real_parcela_sem_recompra": 0.4944134078,
+        "real_receita_mediana": 48.575,
+        "real_valor_da_primeira_compra": 364.4330586592,
+        "modelo_recompras": 2.1887700988,
+        "modelo_recompras_inferior": 2.0824645619,
+        "modelo_recompras_superior": 2.2975079992,
+        "modelo_receita": 887.2405241713,
+        "modelo_receita_inferior": 831.8418595654,
+        "modelo_receita_superior": 945.1525608506,
+        "modelo_sobre_real": 1.8739305975,
+        "media_da_base_recompras": 2.351352232,
+        "media_da_base_receita": 960.9307299392,
+        "coortes_antigas_clientes": 2685.0,
+        "coortes_antigas_recompras": 2.173556797,
+        "coortes_antigas_receita": 1128.9815977654,
+        "diagnostico_modelo_recompras": 1.6869870261,
+        "diagnostico_modelo_receita": 655.1012580453,
+        "diagnostico_coortes_clientes": 1734.0,
+        "diagnostico_coortes_recompras": 1.5559400231,
+        "diagnostico_coortes_receita": 628.3456747405
+      },
+      "39 semanas": {
+        "clientes_novos_acompanhados": 344.0,
+        "real_recompras": 1.6569767442,
+        "real_recompras_inferior": 1.363372093,
+        "real_recompras_superior": 1.9651889535,
+        "real_receita": 710.9237209302,
+        "real_receita_inferior": 493.0342645349,
+        "real_receita_superior": 979.9275385174,
+        "real_parcela_sem_recompra": 0.4622093023,
+        "real_receita_mediana": 120.4,
+        "real_valor_da_primeira_compra": 356.7908139535,
+        "modelo_recompras": 3.2777679236,
+        "modelo_recompras_inferior": 3.1181423463,
+        "modelo_recompras_superior": 3.4318652866,
+        "modelo_receita": 1328.6770192482,
+        "modelo_receita_inferior": 1245.7867676277,
+        "modelo_receita_superior": 1414.0569610652,
+        "modelo_sobre_real": 1.8689445578,
+        "media_da_base_recompras": 3.527028348,
+        "media_da_base_receita": 1441.3960949089,
+        "coortes_antigas_clientes": 1724.0,
+        "coortes_antigas_recompras": 3.8683294664,
+        "coortes_antigas_receita": 2172.9184280742,
+        "diagnostico_modelo_recompras": 2.5304529262,
+        "diagnostico_modelo_receita": 982.6411642374,
+        "diagnostico_coortes_clientes": 773.0,
+        "diagnostico_coortes_recompras": 2.6610608021,
+        "diagnostico_coortes_receita": 1141.8067141009
+      }
+    },
+    "curvas": [
+      {
+        "semanas_desde_a_primeira_compra": 0,
+        "real": 0.0,
+        "real_inferior": 0.0,
+        "real_superior": 0.0,
+        "modelo": 0.0,
+        "modelo_inferior": 0.0,
+        "modelo_superior": 0.0,
+        "media_da_base": 0.0,
+        "coortes_antigas": 0.0,
+        "diagnostico_modelo": 0.0
+      },
+      {
+        "semanas_desde_a_primeira_compra": 1,
+        "real": 5.19,
+        "real_inferior": 2.48,
+        "real_superior": 8.49,
+        "modelo": 34.24,
+        "modelo_inferior": 32.1,
+        "modelo_superior": 36.54,
+        "media_da_base": 36.96,
+        "coortes_antigas": 37.6,
+        "diagnostico_modelo": 25.2
+      },
+      {
+        "semanas_desde_a_primeira_compra": 2,
+        "real": 20.67,
+        "real_inferior": 12.04,
+        "real_superior": 32.45,
+        "modelo": 68.46,
+        "modelo_inferior": 64.18,
+        "modelo_superior": 73.06,
+        "media_da_base": 73.92,
+        "coortes_antigas": 87.71,
+        "diagnostico_modelo": 50.39
+      },
+      {
+        "semanas_desde_a_primeira_compra": 3,
+        "real": 36.04,
+        "real_inferior": 25.15,
+        "real_superior": 49.27,
+        "modelo": 102.68,
+        "modelo_inferior": 96.26,
+        "modelo_superior": 109.57,
+        "media_da_base": 110.88,
+        "coortes_antigas": 122.82,
+        "diagnostico_modelo": 75.59
+      },
+      {
+        "semanas_desde_a_primeira_compra": 4,
+        "real": 49.95,
+        "real_inferior": 36.28,
+        "real_superior": 66.27,
+        "modelo": 136.89,
+        "modelo_inferior": 128.33,
+        "modelo_superior": 146.06,
+        "media_da_base": 147.84,
+        "coortes_antigas": 138.34,
+        "diagnostico_modelo": 100.79
+      },
+      {
+        "semanas_desde_a_primeira_compra": 5,
+        "real": 67.9,
+        "real_inferior": 50.94,
+        "real_superior": 87.67,
+        "modelo": 171.09,
+        "modelo_inferior": 160.4,
+        "modelo_superior": 182.53,
+        "media_da_base": 184.79,
+        "coortes_antigas": 174.35,
+        "diagnostico_modelo": 125.98
+      },
+      {
+        "semanas_desde_a_primeira_compra": 6,
+        "real": 87.6,
+        "real_inferior": 67.53,
+        "real_superior": 110.81,
+        "modelo": 205.28,
+        "modelo_inferior": 192.45,
+        "modelo_superior": 219.0,
+        "media_da_base": 221.75,
+        "coortes_antigas": 247.28,
+        "diagnostico_modelo": 151.18
+      },
+      {
+        "semanas_desde_a_primeira_compra": 7,
+        "real": 105.41,
+        "real_inferior": 83.52,
+        "real_superior": 131.56,
+        "modelo": 239.46,
+        "modelo_inferior": 224.5,
+        "modelo_superior": 255.44,
+        "media_da_base": 258.71,
+        "coortes_antigas": 282.83,
+        "diagnostico_modelo": 176.38
+      },
+      {
+        "semanas_desde_a_primeira_compra": 8,
+        "real": 117.57,
+        "real_inferior": 93.84,
+        "real_superior": 145.24,
+        "modelo": 273.64,
+        "modelo_inferior": 256.53,
+        "modelo_superior": 291.87,
+        "media_da_base": 295.67,
+        "coortes_antigas": 341.8,
+        "diagnostico_modelo": 201.57
+      },
+      {
+        "semanas_desde_a_primeira_compra": 9,
+        "real": 150.36,
+        "real_inferior": 117.74,
+        "real_superior": 188.04,
+        "modelo": 307.8,
+        "modelo_inferior": 288.56,
+        "modelo_superior": 328.29,
+        "media_da_base": 332.63,
+        "coortes_antigas": 379.49,
+        "diagnostico_modelo": 226.77
+      },
+      {
+        "semanas_desde_a_primeira_compra": 10,
+        "real": 177.51,
+        "real_inferior": 137.26,
+        "real_superior": 223.47,
+        "modelo": 341.95,
+        "modelo_inferior": 320.58,
+        "modelo_superior": 364.69,
+        "media_da_base": 369.59,
+        "coortes_antigas": 416.26,
+        "diagnostico_modelo": 251.97
+      },
+      {
+        "semanas_desde_a_primeira_compra": 11,
+        "real": 192.91,
+        "real_inferior": 151.3,
+        "real_superior": 242.84,
+        "modelo": 376.1,
+        "modelo_inferior": 352.59,
+        "modelo_superior": 401.08,
+        "media_da_base": 406.55,
+        "coortes_antigas": 458.12,
+        "diagnostico_modelo": 277.16
+      },
+      {
+        "semanas_desde_a_primeira_compra": 12,
+        "real": 213.06,
+        "real_inferior": 168.29,
+        "real_superior": 265.72,
+        "modelo": 410.24,
+        "modelo_inferior": 384.6,
+        "modelo_superior": 437.45,
+        "media_da_base": 443.51,
+        "coortes_antigas": 509.81,
+        "diagnostico_modelo": 302.36
+      },
+      {
+        "semanas_desde_a_primeira_compra": 13,
+        "real": 227.21,
+        "real_inferior": 181.21,
+        "real_superior": 280.65,
+        "modelo": 444.37,
+        "modelo_inferior": 416.59,
+        "modelo_superior": 473.81,
+        "media_da_base": 480.47,
+        "coortes_antigas": 552.9,
+        "diagnostico_modelo": 327.55
+      },
+      {
+        "semanas_desde_a_primeira_compra": 14,
+        "real": 271.19,
+        "real_inferior": 202.54,
+        "real_superior": 359.14,
+        "modelo": 478.49,
+        "modelo_inferior": 448.58,
+        "modelo_superior": 510.15,
+        "media_da_base": 517.42,
+        "coortes_antigas": 600.6,
+        "diagnostico_modelo": 352.75
+      },
+      {
+        "semanas_desde_a_primeira_compra": 15,
+        "real": 290.93,
+        "real_inferior": 221.71,
+        "real_superior": 380.37,
+        "modelo": 512.6,
+        "modelo_inferior": 480.57,
+        "modelo_superior": 546.48,
+        "media_da_base": 554.38,
+        "coortes_antigas": 646.35,
+        "diagnostico_modelo": 377.95
+      },
+      {
+        "semanas_desde_a_primeira_compra": 16,
+        "real": 306.95,
+        "real_inferior": 234.96,
+        "real_superior": 398.51,
+        "modelo": 546.7,
+        "modelo_inferior": 512.54,
+        "modelo_superior": 582.8,
+        "media_da_base": 591.34,
+        "coortes_antigas": 694.35,
+        "diagnostico_modelo": 403.14
+      },
+      {
+        "semanas_desde_a_primeira_compra": 17,
+        "real": 332.97,
+        "real_inferior": 255.65,
+        "real_superior": 427.41,
+        "modelo": 580.79,
+        "modelo_inferior": 544.5,
+        "modelo_superior": 619.1,
+        "media_da_base": 628.3,
+        "coortes_antigas": 742.51,
+        "diagnostico_modelo": 428.34
+      },
+      {
+        "semanas_desde_a_primeira_compra": 18,
+        "real": 348.72,
+        "real_inferior": 269.16,
+        "real_superior": 444.21,
+        "modelo": 614.88,
+        "modelo_inferior": 576.46,
+        "modelo_superior": 655.38,
+        "media_da_base": 665.26,
+        "coortes_antigas": 778.48,
+        "diagnostico_modelo": 453.53
+      },
+      {
+        "semanas_desde_a_primeira_compra": 19,
+        "real": 362.25,
+        "real_inferior": 280.14,
+        "real_superior": 459.11,
+        "modelo": 648.95,
+        "modelo_inferior": 608.41,
+        "modelo_superior": 691.65,
+        "media_da_base": 702.22,
+        "coortes_antigas": 822.24,
+        "diagnostico_modelo": 478.73
+      },
+      {
+        "semanas_desde_a_primeira_compra": 20,
+        "real": 380.08,
+        "real_inferior": 298.96,
+        "real_superior": 477.05,
+        "modelo": 683.02,
+        "modelo_inferior": 640.35,
+        "modelo_superior": 727.91,
+        "media_da_base": 739.18,
+        "coortes_antigas": 867.69,
+        "diagnostico_modelo": 503.93
+      },
+      {
+        "semanas_desde_a_primeira_compra": 21,
+        "real": 398.69,
+        "real_inferior": 316.36,
+        "real_superior": 496.79,
+        "modelo": 717.08,
+        "modelo_inferior": 672.29,
+        "modelo_superior": 764.15,
+        "media_da_base": 776.14,
+        "coortes_antigas": 917.56,
+        "diagnostico_modelo": 529.12
+      },
+      {
+        "semanas_desde_a_primeira_compra": 22,
+        "real": 416.73,
+        "real_inferior": 331.58,
+        "real_superior": 515.24,
+        "modelo": 751.13,
+        "modelo_inferior": 704.21,
+        "modelo_superior": 800.38,
+        "media_da_base": 813.1,
+        "coortes_antigas": 961.56,
+        "diagnostico_modelo": 554.32
+      },
+      {
+        "semanas_desde_a_primeira_compra": 23,
+        "real": 435.32,
+        "real_inferior": 347.89,
+        "real_superior": 536.47,
+        "modelo": 785.17,
+        "modelo_inferior": 736.13,
+        "modelo_superior": 836.59,
+        "media_da_base": 850.05,
+        "coortes_antigas": 1011.45,
+        "diagnostico_modelo": 579.51
+      },
+      {
+        "semanas_desde_a_primeira_compra": 24,
+        "real": 452.6,
+        "real_inferior": 362.11,
+        "real_superior": 555.07,
+        "modelo": 819.2,
+        "modelo_inferior": 768.04,
+        "modelo_superior": 872.79,
+        "media_da_base": 887.01,
+        "coortes_antigas": 1049.06,
+        "diagnostico_modelo": 604.71
+      },
+      {
+        "semanas_desde_a_primeira_compra": 25,
+        "real": 462.63,
+        "real_inferior": 371.16,
+        "real_superior": 565.75,
+        "modelo": 853.22,
+        "modelo_inferior": 799.95,
+        "modelo_superior": 908.98,
+        "media_da_base": 923.97,
+        "coortes_antigas": 1088.99,
+        "diagnostico_modelo": 629.91
+      },
+      {
+        "semanas_desde_a_primeira_compra": 26,
+        "real": 473.46,
+        "real_inferior": 381.72,
+        "real_superior": 576.72,
+        "modelo": 887.24,
+        "modelo_inferior": 831.84,
+        "modelo_superior": 945.15,
+        "media_da_base": 960.93,
+        "coortes_antigas": 1128.98,
+        "diagnostico_modelo": 655.1
+      }
+    ],
+    "distribuicao": {
+      "modelo (simulado)": {
+        "parcela_sem_recompra": 0.32651,
+        "mediana": 364.864407742,
+        "percentil_75": 1105.0957548697,
+        "percentil_90": 2317.1331936571,
+        "percentil_99": 7246.4682648437,
+        "media": 888.1508580052
+      },
+      "real (novos da validação)": {
+        "parcela_sem_recompra": 0.4944134078,
+        "mediana": 48.575,
+        "percentil_75": 471.35,
+        "percentil_90": 1138.46,
+        "percentil_99": 5266.9485,
+        "media": 473.4649860335
+      }
+    }
+  },
+  "sobrevivencia": {
+    "tabela": {
+      "Primeira compra em dez/2009 (visto no corte)": {
+        "clientes": 951.0,
+        "voltaram": 848.0,
+        "semanas_medianas_ate_voltar": 8.8571428571,
+        "voltou_em_13": 0.6014721346,
+        "voltou_em_13_inferior": 0.5704942077,
+        "voltou_em_13_superior": 0.6326595883,
+        "voltou_em_26": 0.7812828601,
+        "voltou_em_26_inferior": 0.7545049357,
+        "voltou_em_26_superior": 0.8069819346
+      },
+      "Primeira compra de jan a nov/2010 (visto no corte)": {
+        "clientes": 3278.0,
+        "voltaram": 1891.0,
+        "semanas_medianas_ate_voltar": 16.0,
+        "voltou_em_13": 0.4484286762,
+        "voltou_em_13_inferior": 0.4299518743,
+        "voltou_em_13_superior": 0.4673365318,
+        "voltou_em_26": 0.6531379196,
+        "voltou_em_26_inferior": 0.633858677,
+        "voltou_em_26_superior": 0.6723575508
+      },
+      "Clientes novos da validação (dez/2010 em diante)": {
+        "clientes": 1613.0,
+        "voltaram": 840.0,
+        "semanas_medianas_ate_voltar": 16.2857142857,
+        "voltou_em_13": 0.4481933563,
+        "voltou_em_13_inferior": 0.422104568,
+        "voltou_em_13_superior": 0.4751508557,
+        "voltou_em_26": 0.5873598351,
+        "voltou_em_26_inferior": 0.5592713183,
+        "voltou_em_26_superior": 0.6156977164
+      }
+    },
+    "chance_de_voltar": {
+      "Primeira compra em dez/2009 (visto no corte)": {
+        "calado há 0 semanas": {
+          "chance_de_voltar_em_26_semanas": 0.7812828601472133,
+          "inferior": 0.7560462670872762,
+          "superior": 0.8075709779179807
+        },
+        "calado há 4 semanas": {
+          "chance_de_voltar_em_26_semanas": 0.7266081871345027,
+          "inferior": 0.695741064188135,
+          "superior": 0.7631985294117644
+        },
+        "calado há 13 semanas": {
+          "chance_de_voltar_em_26_semanas": 0.5857519788918202,
+          "inferior": 0.5383195424127324,
+          "superior": 0.6379658840106236
+        }
+      },
+      "Primeira compra de jan a nov/2010 (visto no corte)": {
+        "calado há 0 semanas": {
+          "chance_de_voltar_em_26_semanas": 0.6531379196105278,
+          "inferior": 0.6362717292123498,
+          "superior": 0.6709663701740778
+        },
+        "calado há 4 semanas": {
+          "chance_de_voltar_em_26_semanas": 0.6395541515042873,
+          "inferior": 0.6167944813326768,
+          "superior": 0.6618506780719796
+        },
+        "calado há 13 semanas": {
+          "chance_de_voltar_em_26_semanas": 0.585456600296052,
+          "inferior": 0.5500315981986236,
+          "superior": 0.6159614874888972
+        }
+      },
+      "Clientes novos da validação (dez/2010 em diante)": {
+        "calado há 0 semanas": {
+          "chance_de_voltar_em_26_semanas": 0.5873598351301186,
+          "inferior": 0.5583994584115896,
+          "superior": 0.6168707764462271
+        },
+        "calado há 4 semanas": {
+          "chance_de_voltar_em_26_semanas": 0.5238271650233416,
+          "inferior": 0.4905389671416081,
+          "superior": 0.5561061805155063
+        },
+        "calado há 13 semanas": {
+          "chance_de_voltar_em_26_semanas": 0.36588399739431665,
+          "inferior": 0.3179170148880326,
+          "superior": 0.4079774526132448
+        }
+      }
+    },
+    "curvas": {
+      "Primeira compra em dez/2009 (visto no corte)": [
+        {
+          "tempo": 0.1429,
+          "em_risco": 951,
+          "sobrevivencia": 0.9811,
+          "inferior": 0.9701,
+          "superior": 0.988
+        },
+        {
+          "tempo": 0.5714,
+          "em_risco": 906,
+          "sobrevivencia": 0.9401,
+          "inferior": 0.923,
+          "superior": 0.9534
+        },
+        {
+          "tempo": 1.0,
+          "em_risco": 859,
+          "sobrevivencia": 0.8707,
+          "inferior": 0.8476,
+          "superior": 0.8904
+        },
+        {
+          "tempo": 1.4286,
+          "em_risco": 792,
+          "sobrevivencia": 0.817,
+          "inferior": 0.791,
+          "superior": 0.8402
+        },
+        {
+          "tempo": 1.8571,
+          "em_risco": 755,
+          "sobrevivencia": 0.7813,
+          "inferior": 0.7536,
+          "superior": 0.8062
+        },
+        {
+          "tempo": 2.2857,
+          "em_risco": 719,
+          "sobrevivencia": 0.7529,
+          "inferior": 0.7242,
+          "superior": 0.7791
+        },
+        {
+          "tempo": 2.7143,
+          "em_risco": 711,
+          "sobrevivencia": 0.7466,
+          "inferior": 0.7177,
+          "superior": 0.773
+        },
+        {
+          "tempo": 3.2857,
+          "em_risco": 705,
+          "sobrevivencia": 0.7371,
+          "inferior": 0.7079,
+          "superior": 0.7639
+        },
+        {
+          "tempo": 3.7143,
+          "em_risco": 698,
+          "sobrevivencia": 0.7287,
+          "inferior": 0.6993,
+          "superior": 0.7558
+        },
+        {
+          "tempo": 4.2857,
+          "em_risco": 679,
+          "sobrevivencia": 0.7087,
+          "inferior": 0.6787,
+          "superior": 0.7365
+        },
+        {
+          "tempo": 4.7143,
+          "em_risco": 663,
+          "sobrevivencia": 0.694,
+          "inferior": 0.6636,
+          "superior": 0.7222
+        },
+        {
+          "tempo": 5.1429,
+          "em_risco": 642,
+          "sobrevivencia": 0.6667,
+          "inferior": 0.6357,
+          "superior": 0.6956
+        },
+        {
+          "tempo": 5.5714,
+          "em_risco": 620,
+          "sobrevivencia": 0.6446,
+          "inferior": 0.6133,
+          "superior": 0.6741
+        },
+        {
+          "tempo": 6.0,
+          "em_risco": 599,
+          "sobrevivencia": 0.6204,
+          "inferior": 0.5887,
+          "superior": 0.6504
+        },
+        {
+          "tempo": 6.4286,
+          "em_risco": 576,
+          "sobrevivencia": 0.6004,
+          "inferior": 0.5685,
+          "superior": 0.6308
+        },
+        {
+          "tempo": 6.8571,
+          "em_risco": 561,
+          "sobrevivencia": 0.5836,
+          "inferior": 0.5516,
+          "superior": 0.6142
+        },
+        {
+          "tempo": 7.2857,
+          "em_risco": 541,
+          "sobrevivencia": 0.5605,
+          "inferior": 0.5283,
+          "superior": 0.5913
+        },
+        {
+          "tempo": 7.7143,
+          "em_risco": 525,
+          "sobrevivencia": 0.5457,
+          "inferior": 0.5135,
+          "superior": 0.5768
+        },
+        {
+          "tempo": 8.1429,
+          "em_risco": 502,
+          "sobrevivencia": 0.5174,
+          "inferior": 0.4851,
+          "superior": 0.5486
+        },
+        {
+          "tempo": 8.5714,
+          "em_risco": 486,
+          "sobrevivencia": 0.5047,
+          "inferior": 0.4725,
+          "superior": 0.536
+        },
+        {
+          "tempo": 9.0,
+          "em_risco": 474,
+          "sobrevivencia": 0.4942,
+          "inferior": 0.462,
+          "superior": 0.5255
+        },
+        {
+          "tempo": 9.4286,
+          "em_risco": 463,
+          "sobrevivencia": 0.4837,
+          "inferior": 0.4516,
+          "superior": 0.515
+        },
+        {
+          "tempo": 9.8571,
+          "em_risco": 454,
+          "sobrevivencia": 0.4763,
+          "inferior": 0.4443,
+          "superior": 0.5077
+        },
+        {
+          "tempo": 10.4286,
+          "em_risco": 448,
+          "sobrevivencia": 0.4669,
+          "inferior": 0.4349,
+          "superior": 0.4982
+        },
+        {
+          "tempo": 10.8571,
+          "em_risco": 438,
+          "sobrevivencia": 0.4585,
+          "inferior": 0.4265,
+          "superior": 0.4898
+        },
+        {
+          "tempo": 11.2857,
+          "em_risco": 426,
+          "sobrevivencia": 0.4448,
+          "inferior": 0.413,
+          "superior": 0.4761
+        },
+        {
+          "tempo": 11.7143,
+          "em_risco": 416,
+          "sobrevivencia": 0.4364,
+          "inferior": 0.4047,
+          "superior": 0.4676
+        },
+        {
+          "tempo": 12.1429,
+          "em_risco": 408,
+          "sobrevivencia": 0.4238,
+          "inferior": 0.3922,
+          "superior": 0.4549
+        },
+        {
+          "tempo": 12.7143,
+          "em_risco": 396,
+          "sobrevivencia": 0.4132,
+          "inferior": 0.3818,
+          "superior": 0.4444
+        },
+        {
+          "tempo": 13.1429,
+          "em_risco": 379,
+          "sobrevivencia": 0.3975,
+          "inferior": 0.3663,
+          "superior": 0.4284
+        },
+        {
+          "tempo": 13.5714,
+          "em_risco": 372,
+          "sobrevivencia": 0.3891,
+          "inferior": 0.358,
+          "superior": 0.4199
+        },
+        {
+          "tempo": 14.0,
+          "em_risco": 362,
+          "sobrevivencia": 0.3722,
+          "inferior": 0.3415,
+          "superior": 0.4029
+        },
+        {
+          "tempo": 14.4286,
+          "em_risco": 349,
+          "sobrevivencia": 0.3638,
+          "inferior": 0.3333,
+          "superior": 0.3944
+        },
+        {
+          "tempo": 14.8571,
+          "em_risco": 339,
+          "sobrevivencia": 0.3512,
+          "inferior": 0.321,
+          "superior": 0.3816
+        },
+        {
+          "tempo": 15.2857,
+          "em_risco": 330,
+          "sobrevivencia": 0.346,
+          "inferior": 0.3158,
+          "superior": 0.3762
+        },
+        {
+          "tempo": 15.7143,
+          "em_risco": 323,
+          "sobrevivencia": 0.3354,
+          "inferior": 0.3056,
+          "superior": 0.3655
+        },
+        {
+          "tempo": 16.1429,
+          "em_risco": 309,
+          "sobrevivencia": 0.3228,
+          "inferior": 0.2933,
+          "superior": 0.3527
+        },
+        {
+          "tempo": 16.5714,
+          "em_risco": 305,
+          "sobrevivencia": 0.3197,
+          "inferior": 0.2902,
+          "superior": 0.3494
+        },
+        {
+          "tempo": 17.2857,
+          "em_risco": 300,
+          "sobrevivencia": 0.3134,
+          "inferior": 0.2841,
+          "superior": 0.343
+        },
+        {
+          "tempo": 18.0,
+          "em_risco": 294,
+          "sobrevivencia": 0.307,
+          "inferior": 0.278,
+          "superior": 0.3365
+        },
+        {
+          "tempo": 18.5714,
+          "em_risco": 286,
+          "sobrevivencia": 0.2976,
+          "inferior": 0.2688,
+          "superior": 0.3269
+        },
+        {
+          "tempo": 19.0,
+          "em_risco": 279,
+          "sobrevivencia": 0.2913,
+          "inferior": 0.2627,
+          "superior": 0.3204
+        },
+        {
+          "tempo": 19.4286,
+          "em_risco": 272,
+          "sobrevivencia": 0.285,
+          "inferior": 0.2566,
+          "superior": 0.3139
+        },
+        {
+          "tempo": 20.0,
+          "em_risco": 268,
+          "sobrevivencia": 0.2808,
+          "inferior": 0.2525,
+          "superior": 0.3096
+        },
+        {
+          "tempo": 20.4286,
+          "em_risco": 260,
+          "sobrevivencia": 0.2713,
+          "inferior": 0.2434,
+          "superior": 0.2999
+        },
+        {
+          "tempo": 20.8571,
+          "em_risco": 254,
+          "sobrevivencia": 0.266,
+          "inferior": 0.2384,
+          "superior": 0.2944
+        },
+        {
+          "tempo": 21.4286,
+          "em_risco": 250,
+          "sobrevivencia": 0.2608,
+          "inferior": 0.2333,
+          "superior": 0.289
+        },
+        {
+          "tempo": 21.8571,
+          "em_risco": 243,
+          "sobrevivencia": 0.2524,
+          "inferior": 0.2252,
+          "superior": 0.2804
+        },
+        {
+          "tempo": 22.2857,
+          "em_risco": 235,
+          "sobrevivencia": 0.245,
+          "inferior": 0.2181,
+          "superior": 0.2727
+        },
+        {
+          "tempo": 23.0,
+          "em_risco": 228,
+          "sobrevivencia": 0.2366,
+          "inferior": 0.2101,
+          "superior": 0.264
+        },
+        {
+          "tempo": 24.4286,
+          "em_risco": 223,
+          "sobrevivencia": 0.2313,
+          "inferior": 0.2051,
+          "superior": 0.2586
+        },
+        {
+          "tempo": 25.0,
+          "em_risco": 217,
+          "sobrevivencia": 0.2271,
+          "inferior": 0.201,
+          "superior": 0.2542
+        },
+        {
+          "tempo": 25.8571,
+          "em_risco": 214,
+          "sobrevivencia": 0.2198,
+          "inferior": 0.194,
+          "superior": 0.2466
+        },
+        {
+          "tempo": 26.8571,
+          "em_risco": 207,
+          "sobrevivencia": 0.2166,
+          "inferior": 0.191,
+          "superior": 0.2433
+        },
+        {
+          "tempo": 27.2857,
+          "em_risco": 204,
+          "sobrevivencia": 0.2124,
+          "inferior": 0.187,
+          "superior": 0.2389
+        },
+        {
+          "tempo": 27.8571,
+          "em_risco": 199,
+          "sobrevivencia": 0.2082,
+          "inferior": 0.183,
+          "superior": 0.2346
+        },
+        {
+          "tempo": 28.8571,
+          "em_risco": 194,
+          "sobrevivencia": 0.2029,
+          "inferior": 0.178,
+          "superior": 0.2291
+        },
+        {
+          "tempo": 29.8571,
+          "em_risco": 190,
+          "sobrevivencia": 0.1987,
+          "inferior": 0.174,
+          "superior": 0.2247
+        },
+        {
+          "tempo": 30.4286,
+          "em_risco": 186,
+          "sobrevivencia": 0.1924,
+          "inferior": 0.168,
+          "superior": 0.2181
+        },
+        {
+          "tempo": 31.5714,
+          "em_risco": 181,
+          "sobrevivencia": 0.1893,
+          "inferior": 0.1651,
+          "superior": 0.2148
+        },
+        {
+          "tempo": 32.5714,
+          "em_risco": 178,
+          "sobrevivencia": 0.1861,
+          "inferior": 0.1621,
+          "superior": 0.2115
+        },
+        {
+          "tempo": 33.7143,
+          "em_risco": 175,
+          "sobrevivencia": 0.183,
+          "inferior": 0.1591,
+          "superior": 0.2082
+        },
+        {
+          "tempo": 34.1429,
+          "em_risco": 170,
+          "sobrevivencia": 0.1777,
+          "inferior": 0.1541,
+          "superior": 0.2027
+        },
+        {
+          "tempo": 34.7143,
+          "em_risco": 166,
+          "sobrevivencia": 0.1735,
+          "inferior": 0.1502,
+          "superior": 0.1983
+        },
+        {
+          "tempo": 36.4286,
+          "em_risco": 162,
+          "sobrevivencia": 0.1693,
+          "inferior": 0.1462,
+          "superior": 0.1938
+        },
+        {
+          "tempo": 38.0,
+          "em_risco": 159,
+          "sobrevivencia": 0.1661,
+          "inferior": 0.1433,
+          "superior": 0.1905
+        },
+        {
+          "tempo": 39.7143,
+          "em_risco": 156,
+          "sobrevivencia": 0.163,
+          "inferior": 0.1403,
+          "superior": 0.1872
+        },
+        {
+          "tempo": 41.4286,
+          "em_risco": 153,
+          "sobrevivencia": 0.1588,
+          "inferior": 0.1364,
+          "superior": 0.1828
+        },
+        {
+          "tempo": 42.2857,
+          "em_risco": 148,
+          "sobrevivencia": 0.1535,
+          "inferior": 0.1314,
+          "superior": 0.1772
+        },
+        {
+          "tempo": 43.0,
+          "em_risco": 144,
+          "sobrevivencia": 0.1504,
+          "inferior": 0.1285,
+          "superior": 0.1739
+        },
+        {
+          "tempo": 43.7143,
+          "em_risco": 140,
+          "sobrevivencia": 0.1441,
+          "inferior": 0.1226,
+          "superior": 0.1672
+        },
+        {
+          "tempo": 44.7143,
+          "em_risco": 134,
+          "sobrevivencia": 0.1399,
+          "inferior": 0.1187,
+          "superior": 0.1627
+        },
+        {
+          "tempo": 45.8571,
+          "em_risco": 130,
+          "sobrevivencia": 0.1346,
+          "inferior": 0.1138,
+          "superior": 0.1571
+        },
+        {
+          "tempo": 46.7143,
+          "em_risco": 126,
+          "sobrevivencia": 0.1314,
+          "inferior": 0.1109,
+          "superior": 0.1538
+        },
+        {
+          "tempo": 47.4286,
+          "em_risco": 123,
+          "sobrevivencia": 0.1283,
+          "inferior": 0.108,
+          "superior": 0.1504
+        },
+        {
+          "tempo": 48.0,
+          "em_risco": 120,
+          "sobrevivencia": 0.123,
+          "inferior": 0.1031,
+          "superior": 0.1448
+        },
+        {
+          "tempo": 48.8571,
+          "em_risco": 115,
+          "sobrevivencia": 0.1188,
+          "inferior": 0.0992,
+          "superior": 0.1403
+        },
+        {
+          "tempo": 49.4286,
+          "em_risco": 109,
+          "sobrevivencia": 0.1146,
+          "inferior": 0.0953,
+          "superior": 0.1358
+        },
+        {
+          "tempo": 51.7143,
+          "em_risco": 23,
+          "sobrevivencia": 0.1048,
+          "inferior": 0.0848,
+          "superior": 0.1271
+        }
+      ],
+      "Primeira compra de jan a nov/2010 (visto no corte)": [
+        {
+          "tempo": 0.1429,
+          "em_risco": 3272,
+          "sobrevivencia": 0.9963,
+          "inferior": 0.9936,
+          "superior": 0.9979
+        },
+        {
+          "tempo": 0.7143,
+          "em_risco": 3185,
+          "sobrevivencia": 0.9809,
+          "inferior": 0.9756,
+          "superior": 0.9851
+        },
+        {
+          "tempo": 1.2857,
+          "em_risco": 3073,
+          "sobrevivencia": 0.9604,
+          "inferior": 0.953,
+          "superior": 0.9666
+        },
+        {
+          "tempo": 1.8571,
+          "em_risco": 2979,
+          "sobrevivencia": 0.9423,
+          "inferior": 0.9337,
+          "superior": 0.9499
+        },
+        {
+          "tempo": 2.4286,
+          "em_risco": 2845,
+          "sobrevivencia": 0.9137,
+          "inferior": 0.9034,
+          "superior": 0.923
+        },
+        {
+          "tempo": 3.0,
+          "em_risco": 2741,
+          "sobrevivencia": 0.8851,
+          "inferior": 0.8734,
+          "superior": 0.8958
+        },
+        {
+          "tempo": 3.5714,
+          "em_risco": 2634,
+          "sobrevivencia": 0.8673,
+          "inferior": 0.8549,
+          "superior": 0.8787
+        },
+        {
+          "tempo": 4.1429,
+          "em_risco": 2524,
+          "sobrevivencia": 0.8439,
+          "inferior": 0.8306,
+          "superior": 0.8562
+        },
+        {
+          "tempo": 4.7143,
+          "em_risco": 2444,
+          "sobrevivencia": 0.8236,
+          "inferior": 0.8097,
+          "superior": 0.8366
+        },
+        {
+          "tempo": 5.2857,
+          "em_risco": 2312,
+          "sobrevivencia": 0.7965,
+          "inferior": 0.7818,
+          "superior": 0.8104
+        },
+        {
+          "tempo": 5.8571,
+          "em_risco": 2228,
+          "sobrevivencia": 0.7759,
+          "inferior": 0.7606,
+          "superior": 0.7903
+        },
+        {
+          "tempo": 6.4286,
+          "em_risco": 2116,
+          "sobrevivencia": 0.7494,
+          "inferior": 0.7335,
+          "superior": 0.7645
+        },
+        {
+          "tempo": 7.0,
+          "em_risco": 2028,
+          "sobrevivencia": 0.7242,
+          "inferior": 0.7077,
+          "superior": 0.7399
+        },
+        {
+          "tempo": 7.5714,
+          "em_risco": 1923,
+          "sobrevivencia": 0.7033,
+          "inferior": 0.6865,
+          "superior": 0.7195
+        },
+        {
+          "tempo": 8.1429,
+          "em_risco": 1845,
+          "sobrevivencia": 0.6866,
+          "inferior": 0.6695,
+          "superior": 0.7031
+        },
+        {
+          "tempo": 8.7143,
+          "em_risco": 1775,
+          "sobrevivencia": 0.6718,
+          "inferior": 0.6544,
+          "superior": 0.6886
+        },
+        {
+          "tempo": 9.2857,
+          "em_risco": 1689,
+          "sobrevivencia": 0.6556,
+          "inferior": 0.6379,
+          "superior": 0.6726
+        },
+        {
+          "tempo": 9.8571,
+          "em_risco": 1636,
+          "sobrevivencia": 0.6399,
+          "inferior": 0.622,
+          "superior": 0.6572
+        },
+        {
+          "tempo": 10.4286,
+          "em_risco": 1561,
+          "sobrevivencia": 0.6196,
+          "inferior": 0.6014,
+          "superior": 0.6372
+        },
+        {
+          "tempo": 11.0,
+          "em_risco": 1512,
+          "sobrevivencia": 0.6083,
+          "inferior": 0.59,
+          "superior": 0.6261
+        },
+        {
+          "tempo": 11.5714,
+          "em_risco": 1463,
+          "sobrevivencia": 0.5941,
+          "inferior": 0.5756,
+          "superior": 0.6121
+        },
+        {
+          "tempo": 12.1429,
+          "em_risco": 1408,
+          "sobrevivencia": 0.5752,
+          "inferior": 0.5565,
+          "superior": 0.5934
+        },
+        {
+          "tempo": 12.7143,
+          "em_risco": 1358,
+          "sobrevivencia": 0.562,
+          "inferior": 0.5432,
+          "superior": 0.5804
+        },
+        {
+          "tempo": 13.2857,
+          "em_risco": 1313,
+          "sobrevivencia": 0.5449,
+          "inferior": 0.5259,
+          "superior": 0.5634
+        },
+        {
+          "tempo": 13.8571,
+          "em_risco": 1279,
+          "sobrevivencia": 0.5348,
+          "inferior": 0.5158,
+          "superior": 0.5535
+        },
+        {
+          "tempo": 14.4286,
+          "em_risco": 1244,
+          "sobrevivencia": 0.5247,
+          "inferior": 0.5056,
+          "superior": 0.5434
+        },
+        {
+          "tempo": 15.0,
+          "em_risco": 1203,
+          "sobrevivencia": 0.5132,
+          "inferior": 0.494,
+          "superior": 0.532
+        },
+        {
+          "tempo": 15.5714,
+          "em_risco": 1174,
+          "sobrevivencia": 0.5063,
+          "inferior": 0.4871,
+          "superior": 0.5251
+        },
+        {
+          "tempo": 16.1429,
+          "em_risco": 1145,
+          "sobrevivencia": 0.4971,
+          "inferior": 0.4779,
+          "superior": 0.5161
+        },
+        {
+          "tempo": 16.7143,
+          "em_risco": 1117,
+          "sobrevivencia": 0.4884,
+          "inferior": 0.4691,
+          "superior": 0.5074
+        },
+        {
+          "tempo": 17.2857,
+          "em_risco": 1076,
+          "sobrevivencia": 0.4747,
+          "inferior": 0.4553,
+          "superior": 0.4937
+        },
+        {
+          "tempo": 17.8571,
+          "em_risco": 1054,
+          "sobrevivencia": 0.4644,
+          "inferior": 0.4451,
+          "superior": 0.4835
+        },
+        {
+          "tempo": 18.4286,
+          "em_risco": 998,
+          "sobrevivencia": 0.4505,
+          "inferior": 0.4311,
+          "superior": 0.4696
+        },
+        {
+          "tempo": 19.0,
+          "em_risco": 971,
+          "sobrevivencia": 0.4405,
+          "inferior": 0.4211,
+          "superior": 0.4597
+        },
+        {
+          "tempo": 19.5714,
+          "em_risco": 946,
+          "sobrevivencia": 0.4345,
+          "inferior": 0.4151,
+          "superior": 0.4537
+        },
+        {
+          "tempo": 20.1429,
+          "em_risco": 914,
+          "sobrevivencia": 0.4243,
+          "inferior": 0.4049,
+          "superior": 0.4435
+        },
+        {
+          "tempo": 20.7143,
+          "em_risco": 894,
+          "sobrevivencia": 0.4168,
+          "inferior": 0.3974,
+          "superior": 0.436
+        },
+        {
+          "tempo": 21.2857,
+          "em_risco": 858,
+          "sobrevivencia": 0.4059,
+          "inferior": 0.3866,
+          "superior": 0.4252
+        },
+        {
+          "tempo": 21.8571,
+          "em_risco": 832,
+          "sobrevivencia": 0.3968,
+          "inferior": 0.3775,
+          "superior": 0.4161
+        },
+        {
+          "tempo": 22.4286,
+          "em_risco": 797,
+          "sobrevivencia": 0.3891,
+          "inferior": 0.3697,
+          "superior": 0.4083
+        },
+        {
+          "tempo": 23.1429,
+          "em_risco": 765,
+          "sobrevivencia": 0.3792,
+          "inferior": 0.3599,
+          "superior": 0.3985
+        },
+        {
+          "tempo": 23.7143,
+          "em_risco": 736,
+          "sobrevivencia": 0.3697,
+          "inferior": 0.3504,
+          "superior": 0.3889
+        },
+        {
+          "tempo": 24.2857,
+          "em_risco": 700,
+          "sobrevivencia": 0.3625,
+          "inferior": 0.3432,
+          "superior": 0.3817
+        },
+        {
+          "tempo": 25.0,
+          "em_risco": 678,
+          "sobrevivencia": 0.3577,
+          "inferior": 0.3385,
+          "superior": 0.377
+        },
+        {
+          "tempo": 25.5714,
+          "em_risco": 646,
+          "sobrevivencia": 0.3502,
+          "inferior": 0.331,
+          "superior": 0.3695
+        },
+        {
+          "tempo": 26.2857,
+          "em_risco": 622,
+          "sobrevivencia": 0.3446,
+          "inferior": 0.3254,
+          "superior": 0.3639
+        },
+        {
+          "tempo": 26.8571,
+          "em_risco": 604,
+          "sobrevivencia": 0.3396,
+          "inferior": 0.3204,
+          "superior": 0.3589
+        },
+        {
+          "tempo": 27.4286,
+          "em_risco": 570,
+          "sobrevivencia": 0.3304,
+          "inferior": 0.3112,
+          "superior": 0.3497
+        },
+        {
+          "tempo": 28.0,
+          "em_risco": 549,
+          "sobrevivencia": 0.3233,
+          "inferior": 0.3041,
+          "superior": 0.3426
+        },
+        {
+          "tempo": 28.7143,
+          "em_risco": 530,
+          "sobrevivencia": 0.3185,
+          "inferior": 0.2993,
+          "superior": 0.3378
+        },
+        {
+          "tempo": 29.4286,
+          "em_risco": 491,
+          "sobrevivencia": 0.311,
+          "inferior": 0.2919,
+          "superior": 0.3304
+        },
+        {
+          "tempo": 30.0,
+          "em_risco": 472,
+          "sobrevivencia": 0.3059,
+          "inferior": 0.2867,
+          "superior": 0.3252
+        },
+        {
+          "tempo": 30.5714,
+          "em_risco": 452,
+          "sobrevivencia": 0.2986,
+          "inferior": 0.2794,
+          "superior": 0.318
+        },
+        {
+          "tempo": 31.2857,
+          "em_risco": 417,
+          "sobrevivencia": 0.2931,
+          "inferior": 0.2739,
+          "superior": 0.3125
+        },
+        {
+          "tempo": 32.0,
+          "em_risco": 391,
+          "sobrevivencia": 0.285,
+          "inferior": 0.2658,
+          "superior": 0.3045
+        },
+        {
+          "tempo": 32.7143,
+          "em_risco": 365,
+          "sobrevivencia": 0.2767,
+          "inferior": 0.2574,
+          "superior": 0.2962
+        },
+        {
+          "tempo": 33.2857,
+          "em_risco": 346,
+          "sobrevivencia": 0.2712,
+          "inferior": 0.252,
+          "superior": 0.2908
+        },
+        {
+          "tempo": 34.0,
+          "em_risco": 323,
+          "sobrevivencia": 0.2656,
+          "inferior": 0.2464,
+          "superior": 0.2853
+        },
+        {
+          "tempo": 34.7143,
+          "em_risco": 314,
+          "sobrevivencia": 0.2598,
+          "inferior": 0.2405,
+          "superior": 0.2795
+        },
+        {
+          "tempo": 35.5714,
+          "em_risco": 277,
+          "sobrevivencia": 0.2536,
+          "inferior": 0.2342,
+          "superior": 0.2733
+        },
+        {
+          "tempo": 36.8571,
+          "em_risco": 229,
+          "sobrevivencia": 0.2493,
+          "inferior": 0.2299,
+          "superior": 0.2692
+        },
+        {
+          "tempo": 37.8571,
+          "em_risco": 204,
+          "sobrevivencia": 0.2402,
+          "inferior": 0.2205,
+          "superior": 0.2604
+        },
+        {
+          "tempo": 38.7143,
+          "em_risco": 174,
+          "sobrevivencia": 0.2301,
+          "inferior": 0.21,
+          "superior": 0.2507
+        },
+        {
+          "tempo": 39.8571,
+          "em_risco": 144,
+          "sobrevivencia": 0.2227,
+          "inferior": 0.2024,
+          "superior": 0.2437
+        },
+        {
+          "tempo": 40.8571,
+          "em_risco": 116,
+          "sobrevivencia": 0.2139,
+          "inferior": 0.1931,
+          "superior": 0.2355
+        },
+        {
+          "tempo": 43.0,
+          "em_risco": 60,
+          "sobrevivencia": 0.2004,
+          "inferior": 0.1783,
+          "superior": 0.2235
+        }
+      ],
+      "Clientes novos da validação (dez/2010 em diante)": [
+        {
+          "tempo": 0.1429,
+          "em_risco": 1612,
+          "sobrevivencia": 0.9926,
+          "inferior": 0.9869,
+          "superior": 0.9958
+        },
+        {
+          "tempo": 0.5714,
+          "em_risco": 1577,
+          "sobrevivencia": 0.9826,
+          "inferior": 0.9749,
+          "superior": 0.9879
+        },
+        {
+          "tempo": 1.0,
+          "em_risco": 1548,
+          "sobrevivencia": 0.9619,
+          "inferior": 0.9513,
+          "superior": 0.9702
+        },
+        {
+          "tempo": 1.4286,
+          "em_risco": 1506,
+          "sobrevivencia": 0.943,
+          "inferior": 0.9304,
+          "superior": 0.9533
+        },
+        {
+          "tempo": 1.8571,
+          "em_risco": 1456,
+          "sobrevivencia": 0.9251,
+          "inferior": 0.9111,
+          "superior": 0.937
+        },
+        {
+          "tempo": 2.2857,
+          "em_risco": 1413,
+          "sobrevivencia": 0.9053,
+          "inferior": 0.8897,
+          "superior": 0.9187
+        },
+        {
+          "tempo": 2.7143,
+          "em_risco": 1365,
+          "sobrevivencia": 0.8852,
+          "inferior": 0.8684,
+          "superior": 0.9
+        },
+        {
+          "tempo": 3.1429,
+          "em_risco": 1314,
+          "sobrevivencia": 0.859,
+          "inferior": 0.8408,
+          "superior": 0.8753
+        },
+        {
+          "tempo": 3.5714,
+          "em_risco": 1274,
+          "sobrevivencia": 0.8411,
+          "inferior": 0.822,
+          "superior": 0.8584
+        },
+        {
+          "tempo": 4.0,
+          "em_risco": 1235,
+          "sobrevivencia": 0.8169,
+          "inferior": 0.7968,
+          "superior": 0.8353
+        },
+        {
+          "tempo": 4.4286,
+          "em_risco": 1177,
+          "sobrevivencia": 0.7959,
+          "inferior": 0.7748,
+          "superior": 0.8152
+        },
+        {
+          "tempo": 4.8571,
+          "em_risco": 1138,
+          "sobrevivencia": 0.7794,
+          "inferior": 0.7577,
+          "superior": 0.7993
+        },
+        {
+          "tempo": 5.2857,
+          "em_risco": 1100,
+          "sobrevivencia": 0.7593,
+          "inferior": 0.737,
+          "superior": 0.78
+        },
+        {
+          "tempo": 5.7143,
+          "em_risco": 1059,
+          "sobrevivencia": 0.7424,
+          "inferior": 0.7195,
+          "superior": 0.7637
+        },
+        {
+          "tempo": 6.1429,
+          "em_risco": 1022,
+          "sobrevivencia": 0.7232,
+          "inferior": 0.6998,
+          "superior": 0.7451
+        },
+        {
+          "tempo": 6.5714,
+          "em_risco": 984,
+          "sobrevivencia": 0.7081,
+          "inferior": 0.6843,
+          "superior": 0.7305
+        },
+        {
+          "tempo": 7.0,
+          "em_risco": 962,
+          "sobrevivencia": 0.695,
+          "inferior": 0.6708,
+          "superior": 0.7177
+        },
+        {
+          "tempo": 7.4286,
+          "em_risco": 925,
+          "sobrevivencia": 0.6817,
+          "inferior": 0.6573,
+          "superior": 0.7048
+        },
+        {
+          "tempo": 7.8571,
+          "em_risco": 900,
+          "sobrevivencia": 0.6719,
+          "inferior": 0.6473,
+          "superior": 0.6953
+        },
+        {
+          "tempo": 8.2857,
+          "em_risco": 868,
+          "sobrevivencia": 0.6546,
+          "inferior": 0.6295,
+          "superior": 0.6784
+        },
+        {
+          "tempo": 8.7143,
+          "em_risco": 836,
+          "sobrevivencia": 0.6453,
+          "inferior": 0.6201,
+          "superior": 0.6693
+        },
+        {
+          "tempo": 9.1429,
+          "em_risco": 800,
+          "sobrevivencia": 0.6288,
+          "inferior": 0.6033,
+          "superior": 0.6532
+        },
+        {
+          "tempo": 9.5714,
+          "em_risco": 768,
+          "sobrevivencia": 0.624,
+          "inferior": 0.5983,
+          "superior": 0.6485
+        },
+        {
+          "tempo": 10.0,
+          "em_risco": 755,
+          "sobrevivencia": 0.6109,
+          "inferior": 0.585,
+          "superior": 0.6358
+        },
+        {
+          "tempo": 10.4286,
+          "em_risco": 723,
+          "sobrevivencia": 0.6035,
+          "inferior": 0.5774,
+          "superior": 0.6285
+        },
+        {
+          "tempo": 10.8571,
+          "em_risco": 703,
+          "sobrevivencia": 0.5968,
+          "inferior": 0.5706,
+          "superior": 0.6219
+        },
+        {
+          "tempo": 11.2857,
+          "em_risco": 681,
+          "sobrevivencia": 0.5865,
+          "inferior": 0.5601,
+          "superior": 0.6118
+        },
+        {
+          "tempo": 11.7143,
+          "em_risco": 660,
+          "sobrevivencia": 0.5777,
+          "inferior": 0.5512,
+          "superior": 0.6033
+        },
+        {
+          "tempo": 12.1429,
+          "em_risco": 641,
+          "sobrevivencia": 0.5644,
+          "inferior": 0.5377,
+          "superior": 0.5903
+        },
+        {
+          "tempo": 12.5714,
+          "em_risco": 620,
+          "sobrevivencia": 0.5582,
+          "inferior": 0.5313,
+          "superior": 0.5841
+        },
+        {
+          "tempo": 13.2857,
+          "em_risco": 605,
+          "sobrevivencia": 0.5491,
+          "inferior": 0.5221,
+          "superior": 0.5752
+        },
+        {
+          "tempo": 13.7143,
+          "em_risco": 594,
+          "sobrevivencia": 0.5427,
+          "inferior": 0.5156,
+          "superior": 0.5689
+        },
+        {
+          "tempo": 14.1429,
+          "em_risco": 579,
+          "sobrevivencia": 0.5316,
+          "inferior": 0.5043,
+          "superior": 0.5581
+        },
+        {
+          "tempo": 14.5714,
+          "em_risco": 569,
+          "sobrevivencia": 0.527,
+          "inferior": 0.4996,
+          "superior": 0.5535
+        },
+        {
+          "tempo": 15.0,
+          "em_risco": 562,
+          "sobrevivencia": 0.5205,
+          "inferior": 0.4931,
+          "superior": 0.5471
+        },
+        {
+          "tempo": 15.4286,
+          "em_risco": 541,
+          "sobrevivencia": 0.5083,
+          "inferior": 0.4807,
+          "superior": 0.5351
+        },
+        {
+          "tempo": 15.8571,
+          "em_risco": 533,
+          "sobrevivencia": 0.5045,
+          "inferior": 0.4769,
+          "superior": 0.5314
+        },
+        {
+          "tempo": 16.2857,
+          "em_risco": 518,
+          "sobrevivencia": 0.4997,
+          "inferior": 0.4721,
+          "superior": 0.5267
+        },
+        {
+          "tempo": 16.7143,
+          "em_risco": 505,
+          "sobrevivencia": 0.4909,
+          "inferior": 0.4632,
+          "superior": 0.518
+        },
+        {
+          "tempo": 17.2857,
+          "em_risco": 492,
+          "sobrevivencia": 0.4821,
+          "inferior": 0.4543,
+          "superior": 0.5093
+        },
+        {
+          "tempo": 17.8571,
+          "em_risco": 483,
+          "sobrevivencia": 0.4762,
+          "inferior": 0.4483,
+          "superior": 0.5035
+        },
+        {
+          "tempo": 18.4286,
+          "em_risco": 473,
+          "sobrevivencia": 0.4712,
+          "inferior": 0.4433,
+          "superior": 0.4986
+        },
+        {
+          "tempo": 19.0,
+          "em_risco": 459,
+          "sobrevivencia": 0.4631,
+          "inferior": 0.4352,
+          "superior": 0.4906
+        },
+        {
+          "tempo": 19.4286,
+          "em_risco": 443,
+          "sobrevivencia": 0.457,
+          "inferior": 0.4289,
+          "superior": 0.4845
+        },
+        {
+          "tempo": 20.1429,
+          "em_risco": 436,
+          "sobrevivencia": 0.4538,
+          "inferior": 0.4258,
+          "superior": 0.4814
+        },
+        {
+          "tempo": 20.7143,
+          "em_risco": 427,
+          "sobrevivencia": 0.4475,
+          "inferior": 0.4194,
+          "superior": 0.4752
+        },
+        {
+          "tempo": 21.1429,
+          "em_risco": 419,
+          "sobrevivencia": 0.4412,
+          "inferior": 0.4131,
+          "superior": 0.469
+        },
+        {
+          "tempo": 22.0,
+          "em_risco": 409,
+          "sobrevivencia": 0.4348,
+          "inferior": 0.4066,
+          "superior": 0.4626
+        },
+        {
+          "tempo": 22.7143,
+          "em_risco": 401,
+          "sobrevivencia": 0.4316,
+          "inferior": 0.4034,
+          "superior": 0.4594
+        },
+        {
+          "tempo": 23.2857,
+          "em_risco": 391,
+          "sobrevivencia": 0.4261,
+          "inferior": 0.3979,
+          "superior": 0.454
+        },
+        {
+          "tempo": 24.0,
+          "em_risco": 382,
+          "sobrevivencia": 0.4195,
+          "inferior": 0.3912,
+          "superior": 0.4475
+        },
+        {
+          "tempo": 24.8571,
+          "em_risco": 366,
+          "sobrevivencia": 0.4161,
+          "inferior": 0.3878,
+          "superior": 0.4442
+        },
+        {
+          "tempo": 26.0,
+          "em_risco": 355,
+          "sobrevivencia": 0.4126,
+          "inferior": 0.3843,
+          "superior": 0.4407
+        },
+        {
+          "tempo": 26.7143,
+          "em_risco": 339,
+          "sobrevivencia": 0.4067,
+          "inferior": 0.3783,
+          "superior": 0.4349
+        },
+        {
+          "tempo": 28.1429,
+          "em_risco": 324,
+          "sobrevivencia": 0.4005,
+          "inferior": 0.3721,
+          "superior": 0.4288
+        },
+        {
+          "tempo": 29.1429,
+          "em_risco": 310,
+          "sobrevivencia": 0.3955,
+          "inferior": 0.367,
+          "superior": 0.4239
+        },
+        {
+          "tempo": 29.7143,
+          "em_risco": 302,
+          "sobrevivencia": 0.3916,
+          "inferior": 0.3631,
+          "superior": 0.4201
+        },
+        {
+          "tempo": 30.5714,
+          "em_risco": 287,
+          "sobrevivencia": 0.3863,
+          "inferior": 0.3577,
+          "superior": 0.4149
+        },
+        {
+          "tempo": 31.5714,
+          "em_risco": 269,
+          "sobrevivencia": 0.3822,
+          "inferior": 0.3535,
+          "superior": 0.4108
+        },
+        {
+          "tempo": 32.2857,
+          "em_risco": 263,
+          "sobrevivencia": 0.3765,
+          "inferior": 0.3477,
+          "superior": 0.4052
+        },
+        {
+          "tempo": 33.4286,
+          "em_risco": 250,
+          "sobrevivencia": 0.3706,
+          "inferior": 0.3418,
+          "superior": 0.3995
+        },
+        {
+          "tempo": 34.5714,
+          "em_risco": 235,
+          "sobrevivencia": 0.3661,
+          "inferior": 0.3371,
+          "superior": 0.395
+        },
+        {
+          "tempo": 35.4286,
+          "em_risco": 222,
+          "sobrevivencia": 0.3612,
+          "inferior": 0.3322,
+          "superior": 0.3904
+        },
+        {
+          "tempo": 36.8571,
+          "em_risco": 203,
+          "sobrevivencia": 0.3543,
+          "inferior": 0.325,
+          "superior": 0.3837
+        },
+        {
+          "tempo": 39.1429,
+          "em_risco": 156,
+          "sobrevivencia": 0.3477,
+          "inferior": 0.318,
+          "superior": 0.3775
+        },
+        {
+          "tempo": 41.0,
+          "em_risco": 131,
+          "sobrevivencia": 0.34,
+          "inferior": 0.3098,
+          "superior": 0.3704
+        },
+        {
+          "tempo": 42.0,
+          "em_risco": 116,
+          "sobrevivencia": 0.3317,
+          "inferior": 0.3008,
+          "superior": 0.3628
+        },
+        {
+          "tempo": 44.4286,
+          "em_risco": 82,
+          "sobrevivencia": 0.3205,
+          "inferior": 0.2883,
+          "superior": 0.3531
+        },
+        {
+          "tempo": 46.0,
+          "em_risco": 62,
+          "sobrevivencia": 0.3062,
+          "inferior": 0.2717,
+          "superior": 0.3412
+        },
+        {
+          "tempo": 49.8571,
+          "em_risco": 40,
+          "sobrevivencia": 0.2791,
+          "inferior": 0.2391,
+          "superior": 0.3205
+        },
+        {
+          "tempo": 52.2857,
+          "em_risco": 22,
+          "sobrevivencia": 0.2436,
+          "inferior": 0.1965,
+          "superior": 0.2935
+        }
+      ]
+    }
+  },
+  "retorno_por_silencio": [
+    {
+      "grupo": "Comprou duas vezes ou mais",
+      "semanas_calado": "até 4",
+      "clientes": 1303,
+      "modelo_26": 0.8582741253,
+      "voltou_26": 0.723714505,
+      "voltou_26_inferior": 0.698804256,
+      "voltou_26_superior": 0.747309537,
+      "voltou_52": 0.8679969302,
+      "voltou_52_inferior": 0.8485311676,
+      "voltou_52_superior": 0.8852992397
+    },
+    {
+      "grupo": "Comprou duas vezes ou mais",
+      "semanas_calado": "5 a 13",
+      "clientes": 885,
+      "modelo_26": 0.7584871626,
+      "voltou_26": 0.5988700565,
+      "voltou_26_inferior": 0.5662184919,
+      "voltou_26_superior": 0.6306670137,
+      "voltou_52": 0.7649717514,
+      "voltou_52_inferior": 0.7359278208,
+      "voltou_52_superior": 0.7917253342
+    },
+    {
+      "grupo": "Comprou duas vezes ou mais",
+      "semanas_calado": "14 a 26",
+      "clientes": 346,
+      "modelo_26": 0.6785968237,
+      "voltou_26": 0.4075144509,
+      "voltou_26_inferior": 0.3570299871,
+      "voltou_26_superior": 0.4600300029,
+      "voltou_52": 0.6011560694,
+      "voltou_52_inferior": 0.5487226411,
+      "voltou_52_superior": 0.6513679949
+    },
+    {
+      "grupo": "Comprou duas vezes ou mais",
+      "semanas_calado": "27 a 39",
+      "clientes": 165,
+      "modelo_26": 0.5801671329,
+      "voltou_26": 0.3636363636,
+      "voltou_26_inferior": 0.2941129932,
+      "voltou_26_superior": 0.4393647894,
+      "voltou_52": 0.496969697,
+      "voltou_52_inferior": 0.4216213815,
+      "voltou_52_superior": 0.5724559025
+    },
+    {
+      "grupo": "Comprou duas vezes ou mais",
+      "semanas_calado": "40 ou mais",
+      "clientes": 40,
+      "modelo_26": 0.5021041693,
+      "voltou_26": 0.3,
+      "voltou_26_inferior": 0.1807484523,
+      "voltou_26_superior": 0.4543001882,
+      "voltou_52": 0.325,
+      "voltou_52_inferior": 0.2008450223,
+      "voltou_52_superior": 0.4798225381
+    },
+    {
+      "grupo": "Comprou uma vez",
+      "semanas_calado": "até 4",
+      "clientes": 282,
+      "modelo_26": 0.6371107633,
+      "voltou_26": 0.3120567376,
+      "voltou_26_inferior": 0.2608102802,
+      "voltou_26_superior": 0.3683547807,
+      "voltou_52": 0.4964539007,
+      "voltou_52_inferior": 0.4385393774,
+      "voltou_52_superior": 0.554463737
+    },
+    {
+      "grupo": "Comprou uma vez",
+      "semanas_calado": "5 a 13",
+      "clientes": 407,
+      "modelo_26": 0.5510375037,
+      "voltou_26": 0.2751842752,
+      "voltou_26_inferior": 0.2340498598,
+      "voltou_26_superior": 0.3205228444,
+      "voltou_52": 0.4889434889,
+      "voltou_52_inferior": 0.4407103087,
+      "voltou_52_superior": 0.5373834309
+    },
+    {
+      "grupo": "Comprou uma vez",
+      "semanas_calado": "14 a 26",
+      "clientes": 251,
+      "modelo_26": 0.4279469392,
+      "voltou_26": 0.2111553785,
+      "voltou_26_inferior": 0.165212267,
+      "voltou_26_superior": 0.2658065293,
+      "voltou_52": 0.3505976096,
+      "voltou_52_inferior": 0.2942230315,
+      "voltou_52_superior": 0.4114763459
+    },
+    {
+      "grupo": "Comprou uma vez",
+      "semanas_calado": "27 a 39",
+      "clientes": 303,
+      "modelo_26": 0.3479350242,
+      "voltou_26": 0.2343234323,
+      "voltou_26_inferior": 0.1901391549,
+      "voltou_26_superior": 0.2851599112,
+      "voltou_52": 0.3366336634,
+      "voltou_52_inferior": 0.2857648296,
+      "voltou_52_superior": 0.3915929813
+    },
+    {
+      "grupo": "Comprou uma vez",
+      "semanas_calado": "40 ou mais",
+      "clientes": 247,
+      "modelo_26": 0.2914031677,
+      "voltou_26": 0.1174089069,
+      "voltou_26_inferior": 0.0830031695,
+      "voltou_26_superior": 0.1635328661,
+      "voltou_52": 0.2348178138,
+      "voltou_52_inferior": 0.1862657784,
+      "voltou_52_superior": 0.2914920029
+    }
+  ],
+  "sensibilidade_ao_corte": {
+    "2010-08-31 → 2011-08-31": {
+      "semanas_de_calibracao": 39.0,
+      "semanas_de_validacao": 52.0,
+      "clientes": 3294.0,
+      "abandono_medio_por_recompra": 0.0030747707,
+      "probabilidade_vivo_media": 0.9966532537,
+      "vies_modelo": 0.1845112285,
+      "vies_modelo_inferior": 0.1308784927,
+      "vies_modelo_superior": 0.2289576775,
+      "vies_taxa_historica": 0.1110335423,
+      "eam_modelo": 2.3915743277,
+      "eam_taxa_historica": 2.5537160949,
+      "top10_modelo": 0.5609864653,
+      "top10_gasto_historico": 0.5452751264,
+      "top10_rfm": 0.5064723252,
+      "top10_modelo_menos_gasto_inferior": -0.0098250539,
+      "top10_modelo_menos_gasto_superior": 0.0583338748
+    },
+    "2010-11-30 → 2011-11-30": {
+      "semanas_de_calibracao": 52.0,
+      "semanas_de_validacao": 52.0,
+      "clientes": 4229.0,
+      "abandono_medio_por_recompra": 0.0015082238,
+      "probabilidade_vivo_media": 0.9959753993,
+      "vies_modelo": 0.4961877285,
+      "vies_modelo_inferior": 0.4431625224,
+      "vies_modelo_superior": 0.5521719751,
+      "vies_taxa_historica": 0.4423674569,
+      "eam_modelo": 2.4987944789,
+      "eam_taxa_historica": 2.5891382766,
+      "top10_modelo": 0.6124280462,
+      "top10_gasto_historico": 0.6075475532,
+      "top10_rfm": 0.4771065488,
+      "top10_modelo_menos_gasto_inferior": -0.0044904056,
+      "top10_modelo_menos_gasto_superior": 0.0152746577
+    },
+    "2010-12-31 → 2011-11-30": {
+      "semanas_de_calibracao": 56.0,
+      "semanas_de_validacao": 48.0,
+      "clientes": 4303.0,
+      "abandono_medio_por_recompra": 0.0033807435,
+      "probabilidade_vivo_media": 0.9907171563,
+      "vies_modelo": 0.4147309829,
+      "vies_modelo_inferior": 0.3607017073,
+      "vies_modelo_superior": 0.4739596217,
+      "vies_taxa_historica": 0.3746409319,
+      "eam_modelo": 2.0981765486,
+      "eam_taxa_historica": 2.1352220032,
+      "top10_modelo": 0.6197191763,
+      "top10_gasto_historico": 0.611104843,
+      "top10_rfm": 0.5140464853,
+      "top10_modelo_menos_gasto_inferior": -0.0020218827,
+      "top10_modelo_menos_gasto_superior": 0.0181013691
+    },
+    "2011-02-28 → 2011-11-30": {
+      "semanas_de_calibracao": 65.0,
+      "semanas_de_validacao": 39.0,
+      "clientes": 4502.0,
+      "abandono_medio_por_recompra": 0.0206891116,
+      "probabilidade_vivo_media": 0.9574722803,
+      "vies_modelo": 0.1789700163,
+      "vies_modelo_inferior": 0.1384147332,
+      "vies_modelo_superior": 0.2198246584,
+      "vies_taxa_historica": 0.1906951616,
+      "eam_modelo": 1.5292377543,
+      "eam_taxa_historica": 1.5934551229,
+      "top10_modelo": 0.6239874553,
+      "top10_gasto_historico": 0.6100227634,
+      "top10_rfm": 0.5312589918,
+      "top10_modelo_menos_gasto_inferior": 0.0031356991,
+      "top10_modelo_menos_gasto_superior": 0.0251592787
+    },
+    "2011-05-31 → 2011-11-30": {
+      "semanas_de_calibracao": 78.0,
+      "semanas_de_validacao": 26.0,
+      "clientes": 4899.0,
+      "abandono_medio_por_recompra": 0.0445667175,
+      "probabilidade_vivo_media": 0.915438933,
+      "vies_modelo": 0.0045689801,
+      "vies_modelo_inferior": -0.0234711425,
+      "vies_modelo_superior": 0.03915357,
+      "vies_taxa_historica": 0.0715414683,
+      "eam_modelo": 1.0263190759,
+      "eam_taxa_historica": 1.0824565662,
+      "top10_modelo": 0.6302334047,
+      "top10_gasto_historico": 0.6196939162,
+      "top10_rfm": 0.5749879339,
+      "top10_modelo_menos_gasto_inferior": 0.0007670039,
+      "top10_modelo_menos_gasto_superior": 0.0207000941
+    }
+  },
+  "bootstrap": {
+    "repeticoes_das_metricas": 2000,
+    "reajustes_dos_modelos": 200,
+    "semente": 42
+  },
+  "para_o_site": {
+    "numero_chave": {
+      "pt": "£887 → £473",
+      "en": "£887 → £473",
+      "es": "£887 → £473"
+    },
+    "pergunta": {
+      "pt": "Quanto vale um cliente novo nos próximos meses, e quando dá para considerar que ele foi embora?",
+      "en": "How much is a new customer worth over the next few months, and when is it fair to say they are gone?",
+      "es": "¿Cuánto vale un cliente nuevo en los próximos meses y cuándo se puede dar por perdido?"
+    },
+    "resultado": {
+      "pt": "Com um ano de histórico, o modelo BG/NBD + Gamma-Gamma prometia £887 em recompras por cliente novo em seis meses; os clientes novos do ano seguinte entregaram £473. Para ordenar quem já é cliente, o modelo empata com a lista de quem mais gastou: os 10% do topo concentram 61% da receita futura, contra 61% da lista simples e 48% da regra de RFM.",
+      "en": "With one year of history, the BG/NBD + Gamma-Gamma model promised £887 in repeat revenue per new customer over six months; the customers who actually arrived the following year delivered £473. For ranking existing customers the model merely ties with a plain list of top spenders: its top 10% holds 61% of future revenue, versus 61% for the simple list and 48% for an RFM rule.",
+      "es": "Con un año de historial, el modelo BG/NBD + Gamma-Gamma prometía £887 en recompras por cliente nuevo en seis meses; los clientes nuevos del año siguiente dejaron £473. Para ordenar a quienes ya son clientes, el modelo empata con la lista de los que más gastaron: el 10% superior concentra el 61% de los ingresos futuros, frente al 61% de la lista simple y el 48% de la regla RFM."
+    },
+    "detalhe": {
+      "pt": "O erro vem dos dados, não da conta: a base não diz quem é novo de verdade, e um ano que termina no pico de novembro esconde o abandono (a faixa azul é a incerteza dos parâmetros, e a realidade fica bem fora dela). E não existe o dia em que o cliente vai embora: de quem comprou uma vez e estava calado havia mais de nove meses, 23% ainda voltaram no ano seguinte.",
+      "en": "The error comes from the data, not the maths: the dataset cannot tell who is truly new, and a year that ends at the November peak hides churn (the blue band is parameter uncertainty, and reality sits well outside it). There is also no day on which a customer leaves: among one-time buyers silent for more than nine months, 23% still came back within the next year.",
+      "es": "El error viene de los datos, no de la cuenta: la base no dice quién es nuevo de verdad, y un año que termina en el pico de noviembre esconde el abandono (la franja azul es la incertidumbre de los parámetros, y la realidad queda muy fuera de ella). Tampoco existe el día en que el cliente se va: de quienes compraron una vez y llevaban más de nueve meses en silencio, el 23% volvió durante el año siguiente."
+    },
+    "dados": {
+      "pt": "Online Retail II (UCI, CC BY 4.0): 5.852 clientes e 32.878 dias de compra de um varejista online britânico, de dezembro de 2009 a dezembro de 2011.",
+      "en": "Online Retail II (UCI, CC BY 4.0): 5,852 customers and 32,878 purchase days from a UK online retailer, December 2009 to December 2011.",
+      "es": "Online Retail II (UCI, CC BY 4.0): 5.852 clientes y 32.878 días de compra de un minorista online británico, de diciembre de 2009 a diciembre de 2011."
+    },
+    "etiquetas": [
+      "BG/NBD",
+      "Gamma-Gamma",
+      "Kaplan-Meier",
+      "CLV",
+      "validação temporal",
+      "bootstrap"
+    ],
+    "grafico": {
+      "tipo": "linhas",
+      "titulo": {
+        "pt": "Receita de recompra por cliente novo: prevista no corte e realizada",
+        "en": "Repeat revenue per new customer: forecast at the cutoff vs. what happened",
+        "es": "Ingresos por recompra de un cliente nuevo: previstos en el corte y reales"
+      },
+      "eixo_x": {
+        "pt": "semanas desde a primeira compra",
+        "en": "weeks since first purchase",
+        "es": "semanas desde la primera compra"
+      },
+      "eixo_y": {
+        "pt": "receita acumulada por cliente (£)",
+        "en": "cumulative revenue per customer (£)",
+        "es": "ingresos acumulados por cliente (£)"
+      },
+      "formato_x": "numero",
+      "formato_y": "numero",
+      "series": [
+        {
+          "nome": {
+            "pt": "Modelo BG/NBD + Gamma-Gamma",
+            "en": "BG/NBD + Gamma-Gamma model",
+            "es": "Modelo BG/NBD + Gamma-Gamma"
+          },
+          "papel": "principal",
+          "pontos": [
+            [
+              0,
+              -0.0
+            ],
+            [
+              1,
+              34.2
+            ],
+            [
+              2,
+              68.5
+            ],
+            [
+              3,
+              102.7
+            ],
+            [
+              4,
+              136.9
+            ],
+            [
+              5,
+              171.1
+            ],
+            [
+              6,
+              205.3
+            ],
+            [
+              7,
+              239.5
+            ],
+            [
+              8,
+              273.6
+            ],
+            [
+              9,
+              307.8
+            ],
+            [
+              10,
+              342.0
+            ],
+            [
+              11,
+              376.1
+            ],
+            [
+              12,
+              410.2
+            ],
+            [
+              13,
+              444.4
+            ],
+            [
+              14,
+              478.5
+            ],
+            [
+              15,
+              512.6
+            ],
+            [
+              16,
+              546.7
+            ],
+            [
+              17,
+              580.8
+            ],
+            [
+              18,
+              614.9
+            ],
+            [
+              19,
+              649.0
+            ],
+            [
+              20,
+              683.0
+            ],
+            [
+              21,
+              717.1
+            ],
+            [
+              22,
+              751.1
+            ],
+            [
+              23,
+              785.2
+            ],
+            [
+              24,
+              819.2
+            ],
+            [
+              25,
+              853.2
+            ],
+            [
+              26,
+              887.2
+            ]
+          ]
+        },
+        {
+          "nome": {
+            "pt": "Média da base",
+            "en": "Customer-base average",
+            "es": "Promedio de la base"
+          },
+          "papel": "base",
+          "pontos": [
+            [
+              0,
+              0.0
+            ],
+            [
+              1,
+              37.0
+            ],
+            [
+              2,
+              73.9
+            ],
+            [
+              3,
+              110.9
+            ],
+            [
+              4,
+              147.8
+            ],
+            [
+              5,
+              184.8
+            ],
+            [
+              6,
+              221.8
+            ],
+            [
+              7,
+              258.7
+            ],
+            [
+              8,
+              295.7
+            ],
+            [
+              9,
+              332.6
+            ],
+            [
+              10,
+              369.6
+            ],
+            [
+              11,
+              406.5
+            ],
+            [
+              12,
+              443.5
+            ],
+            [
+              13,
+              480.5
+            ],
+            [
+              14,
+              517.4
+            ],
+            [
+              15,
+              554.4
+            ],
+            [
+              16,
+              591.3
+            ],
+            [
+              17,
+              628.3
+            ],
+            [
+              18,
+              665.3
+            ],
+            [
+              19,
+              702.2
+            ],
+            [
+              20,
+              739.2
+            ],
+            [
+              21,
+              776.1
+            ],
+            [
+              22,
+              813.1
+            ],
+            [
+              23,
+              850.1
+            ],
+            [
+              24,
+              887.0
+            ],
+            [
+              25,
+              924.0
+            ],
+            [
+              26,
+              960.9
+            ]
+          ]
+        },
+        {
+          "nome": {
+            "pt": "Modelo sem os clientes de dez/2009",
+            "en": "Model without the Dec 2009 customers",
+            "es": "Modelo sin los clientes de dic/2009"
+          },
+          "papel": "alternativa",
+          "pontos": [
+            [
+              0,
+              -0.0
+            ],
+            [
+              1,
+              25.2
+            ],
+            [
+              2,
+              50.4
+            ],
+            [
+              3,
+              75.6
+            ],
+            [
+              4,
+              100.8
+            ],
+            [
+              5,
+              126.0
+            ],
+            [
+              6,
+              151.2
+            ],
+            [
+              7,
+              176.4
+            ],
+            [
+              8,
+              201.6
+            ],
+            [
+              9,
+              226.8
+            ],
+            [
+              10,
+              252.0
+            ],
+            [
+              11,
+              277.2
+            ],
+            [
+              12,
+              302.4
+            ],
+            [
+              13,
+              327.6
+            ],
+            [
+              14,
+              352.8
+            ],
+            [
+              15,
+              377.9
+            ],
+            [
+              16,
+              403.1
+            ],
+            [
+              17,
+              428.3
+            ],
+            [
+              18,
+              453.5
+            ],
+            [
+              19,
+              478.7
+            ],
+            [
+              20,
+              503.9
+            ],
+            [
+              21,
+              529.1
+            ],
+            [
+              22,
+              554.3
+            ],
+            [
+              23,
+              579.5
+            ],
+            [
+              24,
+              604.7
+            ],
+            [
+              25,
+              629.9
+            ],
+            [
+              26,
+              655.1
+            ]
+          ]
+        },
+        {
+          "nome": {
+            "pt": "Real (clientes novos do ano seguinte)",
+            "en": "Actual (next year's new customers)",
+            "es": "Real (clientes nuevos del año siguiente)"
+          },
+          "papel": "neutro",
+          "pontos": [
+            [
+              0,
+              0.0
+            ],
+            [
+              1,
+              5.2
+            ],
+            [
+              2,
+              20.7
+            ],
+            [
+              3,
+              36.0
+            ],
+            [
+              4,
+              50.0
+            ],
+            [
+              5,
+              67.9
+            ],
+            [
+              6,
+              87.6
+            ],
+            [
+              7,
+              105.4
+            ],
+            [
+              8,
+              117.6
+            ],
+            [
+              9,
+              150.4
+            ],
+            [
+              10,
+              177.5
+            ],
+            [
+              11,
+              192.9
+            ],
+            [
+              12,
+              213.1
+            ],
+            [
+              13,
+              227.2
+            ],
+            [
+              14,
+              271.2
+            ],
+            [
+              15,
+              290.9
+            ],
+            [
+              16,
+              306.9
+            ],
+            [
+              17,
+              333.0
+            ],
+            [
+              18,
+              348.7
+            ],
+            [
+              19,
+              362.3
+            ],
+            [
+              20,
+              380.1
+            ],
+            [
+              21,
+              398.7
+            ],
+            [
+              22,
+              416.7
+            ],
+            [
+              23,
+              435.3
+            ],
+            [
+              24,
+              452.6
+            ],
+            [
+              25,
+              462.6
+            ],
+            [
+              26,
+              473.5
+            ]
+          ]
+        }
+      ],
+      "faixa": {
+        "serie": 0,
+        "inferior": [
+          [
+            0,
+            -0.0
+          ],
+          [
+            1,
+            32.1
+          ],
+          [
+            2,
+            64.2
+          ],
+          [
+            3,
+            96.3
+          ],
+          [
+            4,
+            128.3
+          ],
+          [
+            5,
+            160.4
+          ],
+          [
+            6,
+            192.5
+          ],
+          [
+            7,
+            224.5
+          ],
+          [
+            8,
+            256.5
+          ],
+          [
+            9,
+            288.6
+          ],
+          [
+            10,
+            320.6
+          ],
+          [
+            11,
+            352.6
+          ],
+          [
+            12,
+            384.6
+          ],
+          [
+            13,
+            416.6
+          ],
+          [
+            14,
+            448.6
+          ],
+          [
+            15,
+            480.6
+          ],
+          [
+            16,
+            512.5
+          ],
+          [
+            17,
+            544.5
+          ],
+          [
+            18,
+            576.5
+          ],
+          [
+            19,
+            608.4
+          ],
+          [
+            20,
+            640.4
+          ],
+          [
+            21,
+            672.3
+          ],
+          [
+            22,
+            704.2
+          ],
+          [
+            23,
+            736.1
+          ],
+          [
+            24,
+            768.0
+          ],
+          [
+            25,
+            799.9
+          ],
+          [
+            26,
+            831.8
+          ]
+        ],
+        "superior": [
+          [
+            0,
+            0.0
+          ],
+          [
+            1,
+            36.5
+          ],
+          [
+            2,
+            73.1
+          ],
+          [
+            3,
+            109.6
+          ],
+          [
+            4,
+            146.1
+          ],
+          [
+            5,
+            182.5
+          ],
+          [
+            6,
+            219.0
+          ],
+          [
+            7,
+            255.4
+          ],
+          [
+            8,
+            291.9
+          ],
+          [
+            9,
+            328.3
+          ],
+          [
+            10,
+            364.7
+          ],
+          [
+            11,
+            401.1
+          ],
+          [
+            12,
+            437.5
+          ],
+          [
+            13,
+            473.8
+          ],
+          [
+            14,
+            510.2
+          ],
+          [
+            15,
+            546.5
+          ],
+          [
+            16,
+            582.8
+          ],
+          [
+            17,
+            619.1
+          ],
+          [
+            18,
+            655.4
+          ],
+          [
+            19,
+            691.7
+          ],
+          [
+            20,
+            727.9
+          ],
+          [
+            21,
+            764.2
+          ],
+          [
+            22,
+            800.4
+          ],
+          [
+            23,
+            836.6
+          ],
+          [
+            24,
+            872.8
+          ],
+          [
+            25,
+            909.0
+          ],
+          [
+            26,
+            945.2
+          ]
+        ]
+      }
+    }
+  }
+}
